@@ -29,9 +29,25 @@
   --border2:  #78797B;
   --border3:  #1252D3;
 
+
+
+
+
+  --slider-track:  #d1d5db;
+  --slider-fill:   #1252D3;
+  --slider-thumb:  #FFFFFF;
+  --slider-ring:   #46455114;
+
 }
 
 [data-theme="dark"] {
+
+  --slider-track:  #2d303b;
+  --slider-fill:   #A1D8EE;
+  --slider-thumb:  #1B1C1F;
+  --slider-ring:   #FFFFFF14;
+
+
   --bg-color: #1b1c1f;
   --bg-color2: #fafdff;
   --bg-color3: #2e2d2f;
@@ -301,7 +317,11 @@ strong {
 @media (max-width: 1400px) {
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
+  .fisrt-section-titles h1 {
+    font-size: 36px;
+    line-height: 40px;
+  }
 }
 
 @media (max-width: 992px) {
