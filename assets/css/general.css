@@ -37,10 +37,12 @@
   --slider-fill:   #1252D3;
   --slider-thumb:  #FFFFFF;
   --slider-ring:   #46455114;
-
+  --bg-fon-box: #EFF2F5;
 }
 
 [data-theme="dark"] {
+  --bg-fon-box: #1B1C1F;
+
 
   --slider-track:  #2d303b;
   --slider-fill:   #A1D8EE;

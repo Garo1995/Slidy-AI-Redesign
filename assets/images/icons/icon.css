@@ -87,3 +87,12 @@
       mask-image: url(harc.svg);
   -webkit-mask-image: url(harc.svg);
 }
+.icon-qar{
+      mask-image: url(icon-qar.svg);
+  -webkit-mask-image: url(icon-qar.svg);
+}
+
+.icon-qarakusi{
+      mask-image: url(icon-qarakusi.svg);
+  -webkit-mask-image: url(icon-qarakusi.svg);
+}

@@ -119,3 +119,60 @@ const technologiesSwiper = new Swiper(".technologies-slider", {
     },
   },
 });
+
+
+
+
+
+
+const startupsSwiper = new Swiper(".startups-slidy-slider", {
+  spaceBetween: 10,
+  slidesPerView:2,
+  pagination: {
+    el: ".startups-pagination",
+    clickable: true,
+  },
+
+  breakpoints: {
+    '767': {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    '640': {
+      slidesPerGroup: 1,
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    '320': {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      spaceBetween: 10,
+    },
+  },
+});
+const tempSwiper = new Swiper(".smart-temp-slider", {
+  spaceBetween: 10,
+  slidesPerView:2,
+  pagination: {
+    el: ".temp-pagination",
+    clickable: true,
+  },
+
+  breakpoints: {
+    '767': {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    '640': {
+      slidesPerGroup: 1,
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    '320': {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      spaceBetween: 10,
+    },
+  },
+});
+
