@@ -876,7 +876,6 @@
 
 .linking-card{
     position: relative;
-    padding-bottom: 260px;
     background: #161616;
     margin-top: 80px;
 }
@@ -1239,7 +1238,6 @@
         top: 20px;
     }
     .linking-card {
-        padding-bottom: 200px;
         margin-top: 60px;
     }
     .linking-card-names ul {
@@ -1388,7 +1386,6 @@
         line-height: 14px;
     }
     .linking-card {
-        padding-bottom: 200px;
         margin-top: 20px;
     }
     .linking-card .trust-bg img {

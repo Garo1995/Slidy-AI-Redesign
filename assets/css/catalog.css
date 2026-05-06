@@ -4,7 +4,7 @@
 }
 
 .catalog-main-section {
-  padding: 100px 0 60px 0;
+  padding: 100px 0 140px 0;
 }
 .catalog-search-block {
   gap: 10px;
@@ -1019,6 +1019,9 @@
   }
   .catalog-pagination {
     margin-top: 20px;
+  }
+  .catalog-main-section {
+    padding: 100px 0 76px 0;
   }
 }
 
