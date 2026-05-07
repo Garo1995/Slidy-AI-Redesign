@@ -176,3 +176,36 @@ const tempSwiper = new Swiper(".smart-temp-slider", {
   },
 });
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+let sampleSmSwiper = new Swiper(".sample-sm-slid", {
+  loop: true,
+  spaceBetween: 10,
+  slidesPerView: 4,
+  freeMode: true,
+  watchSlidesProgress: true,
+  pagination: {
+    el: ".sample-pagination",
+    clickable: true,
+  },
+
+});
+let sampleBigSwiper = new Swiper(".sample-big-slid", {
+  loop: true,
+  spaceBetween: 10,
+
+  thumbs: {
+    swiper: sampleSmSwiper,
+  },
+});

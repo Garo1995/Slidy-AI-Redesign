@@ -38,11 +38,14 @@
   --slider-thumb:  #FFFFFF;
   --slider-ring:   #46455114;
   --bg-fon-box: #EFF2F5;
+
+  --slide-border: #F0F0F0;
 }
 
 [data-theme="dark"] {
   --bg-fon-box: #1B1C1F;
 
+  --slide-border: #646464;
 
   --slider-track:  #2d303b;
   --slider-fill:   #A1D8EE;

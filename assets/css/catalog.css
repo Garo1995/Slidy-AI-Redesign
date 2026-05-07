@@ -414,7 +414,7 @@
   display: flex;
   gap: 8px;
   flex-wrap: wrap;
-  margin-top: 10px;
+  margin-top: 16px;
 }
 .c-selected-categories button {
   display: flex;
@@ -439,7 +439,7 @@
   background: var(--main-container6);
 }
 .catalog-items {
-  margin-top: 28px;
+  margin-top: 16px;
   display: grid;
   justify-content: center;
   gap: 10px;
@@ -1022,6 +1022,15 @@
   }
   .catalog-main-section {
     padding: 100px 0 76px 0;
+  }
+  .c-item-hover p {
+    margin: 69px auto 0;
+  }
+
+  .catalog-item {
+    max-width: 364px;
+    width: 100%;
+    margin: 0 auto;
   }
 }
 
