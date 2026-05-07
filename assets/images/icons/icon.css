@@ -96,3 +96,40 @@
       mask-image: url(icon-qarakusi.svg);
   -webkit-mask-image: url(icon-qarakusi.svg);
 }
+.icon-user{
+      mask-image: url(icon-user.svg);
+  -webkit-mask-image: url(icon-user.svg);
+}
+.icon-download{
+      mask-image: url(download.svg);
+  -webkit-mask-image: url(download.svg);
+}
+
+.download-box{
+      mask-image: url(download-box.svg);
+  -webkit-mask-image: url(download-box.svg);
+}
+
+.icon-copy{
+      mask-image: url(icon-copy.svg);
+  -webkit-mask-image: url(icon-copy.svg);
+}
+.icon-share{
+      mask-image: url(icon-share.svg);
+  -webkit-mask-image: url(icon-share.svg);
+}
+
+.icon-cep{
+      mask-image: url(icon-cep.svg);
+  -webkit-mask-image: url(icon-cep.svg);
+}
+
+.icon-wheel{
+      mask-image: url(../../images/wheel.svg);
+  -webkit-mask-image: url(../../images/wheel.svg);
+}
+
+
+.icon-heart{
+    content: url("icon-heart.svg");
+}

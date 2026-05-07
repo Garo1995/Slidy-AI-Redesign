@@ -1387,7 +1387,7 @@ display: block;
 }
 .compare-row .icon-bad {
   font-size: 24px;
-  background: var(--Error, #f24d4d);
+  background: #f24d4d;
 }
 .compare-row:last-child {
   border-bottom: none;

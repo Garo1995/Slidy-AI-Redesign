@@ -215,19 +215,20 @@ strong {
   position: initial !important;
   gap: 8px;
   margin-top: 20px !important;
+
 }
 .swiper-pagination-bullet {
-  width: 8px !important;
-  height: 8px !important;
-  opacity: 1 !important;
-  margin: 0 !important;
-  border-radius: 50% !important;
+  width: 8px;
+  height: 8px;
+  opacity: 1;
+  margin: 0!important;
+  border-radius: 50%;
 }
 
 .swiper-pagination-bullet-active {
-  border-radius: 50% !important;
-  width: 10px !important;
-  height: 10px !important;
+  border-radius: 50% ;
+  width: 10px;
+  height: 10px;
 }
 
 .mobile-block {
@@ -266,6 +267,9 @@ strong {
   gap: 15px;
   transition: 0.3s;
   white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .btn-start:hover {
   background: var(--text-color);
