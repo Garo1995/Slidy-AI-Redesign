@@ -201,7 +201,22 @@ let sampleSmSwiper = new Swiper(".sample-sm-slid", {
     el: ".sample-pagination",
     clickable: true,
   },
-
+  breakpoints: {
+    '767': {
+      spaceBetween: 10,
+      slidesPerView: 4,
+    },
+    '570': {
+      slidesPerView: 3,
+      spaceBetween: 10,
+      loop: true
+    },
+    '320': {
+      slidesPerView: 3,
+      spaceBetween: 10,
+      loop: true
+    },
+  },
 });
 let sampleBigSwiper = new Swiper(".sample-big-slid", {
   loop: true,
@@ -219,6 +234,33 @@ let sampleBigSwiper = new Swiper(".sample-big-slid", {
 
 
 
+const technicalSwiper = new Swiper(".technical-slider", {
+  spaceBetween: 10,
+  slidesPerView:2,
+  pagination: {
+    el: ".technical-pagination",
+    clickable: true,
+  },
+
+  breakpoints: {
+    '767': {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    '570': {
+
+      slidesPerGroup: 1,
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    '320': {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      spaceBetween: 10,
+    },
+  },
+});
+
 const previewSwiper = new Swiper(".preview-swiper", {
   spaceBetween: 9,
   slidesPerView:4,
@@ -228,9 +270,49 @@ const previewSwiper = new Swiper(".preview-swiper", {
   },
 
   breakpoints: {
-    '767': {
+    '1020': {
       slidesPerView: 4,
       spaceBetween: 9,
+    },
+    '767': {
+      slidesPerView: 2,
+      spaceBetween: 9,
+    },
+    '570': {
+      slidesPerGroup: 1,
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    '320': {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      spaceBetween: 10,
+    },
+  },
+});
+
+
+
+
+
+
+
+const simiSwiper = new Swiper(".similar-templates-slider", {
+  spaceBetween: 10,
+  slidesPerView:3,
+  pagination: {
+    el: ".similar-pagination",
+    clickable: true,
+  },
+
+  breakpoints: {
+    '1020': {
+      spaceBetween: 10,
+      slidesPerView:3,
+    },
+    '767': {
+      spaceBetween: 10,
+      slidesPerView:2,
     },
     '640': {
       slidesPerGroup: 1,

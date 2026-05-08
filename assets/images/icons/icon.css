@@ -129,6 +129,33 @@
   -webkit-mask-image: url(../../images/wheel.svg);
 }
 
+.icon-answer{
+      mask-image: url(../../images/answer.svg);
+  -webkit-mask-image: url(../../images/answer.svg);
+}
+
+.star-black{
+      mask-image: url(../../images/icons/star-rounded.svg);
+  -webkit-mask-image: url(../../images/icons/star-rounded.svg);
+}
+
+.ix-support{
+      mask-image: url(../../images/icons/ix-support.svg);
+  -webkit-mask-image: url(../../images/icons/ix-support.svg);
+}
+.boxicons-book{
+      mask-image: url(../../images/icons/boxicons-book.svg);
+  -webkit-mask-image: url(../../images/icons/boxicons-book.svg);
+}
+.ph-video{
+      mask-image: url(../../images/icons/ph-video.svg);
+  -webkit-mask-image: url(../../images/icons/ph-video.svg);
+}
+.mail-outline{
+      mask-image: url(../../images/icons/mail-outline.svg);
+  -webkit-mask-image: url(../../images/icons/mail-outline.svg);
+}
+
 
 .icon-heart{
     content: url("icon-heart.svg");
