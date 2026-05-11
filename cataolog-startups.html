@@ -1,15 +1,17 @@
 <!doctype html>
 <html lang="en" data-theme="dark">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>Catalog</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+          rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 <div class="wrapper overflow-unset">
@@ -137,8 +139,6 @@
                     </button>
 
 
-
-
                 </div>
 
                 <div class="catalog-main-cnt">
@@ -147,42 +147,48 @@
                             <div class="catalog-filters-items">
                                 <div class="c-filter-item">
                                     <p class="c-filter-title">Категории</p>
-                                    <ul class="checkbox-filters-list G-flex-column">
-                                        <li class="active">
-                                            <button>
-                                                <i class="icon icon-check"></i>
-                                            </button>
-                                            <span>Инвестиции</span>
-                                        </li>
 
-                                        <li>
-                                            <button>
+                                    <div class="catalog-check-col G-flex-column">
+                                        <label class="checkbox-chek">
+                                            <small>Инвестиции</small>
+                                            <input type="checkbox">
+                                            <span class="checkmark">
                                                 <i class="icon icon-check"></i>
-                                            </button>
-                                            <span>Продающие</span>
-                                        </li>
-
-                                        <li>
-                                            <button>
+                                            </span>
+                                        </label>
+                                        <label class="checkbox-chek">
+                                            <small>Продающие</small>
+                                            <input type="checkbox">
+                                            <span class="checkmark">
+                                            <i class="icon icon-check"></i>
+                                        </span>
+                                        </label>
+                                        <label class="checkbox-chek">
+                                            <small>Продуктовые</small>
+                                            <input type="checkbox">
+                                            <span class="checkmark">
                                                 <i class="icon icon-check"></i>
-                                            </button>
-                                            <span>Продуктовые</span>
-                                        </li>
-
-                                        <li class="active">
-                                            <button>
+                                            </span>
+                                        </label>
+                                        <label class="checkbox-chek">
+                                            <small>Для грантов</small>
+                                            <input type="checkbox">
+                                            <span class="checkmark">
                                                 <i class="icon icon-check"></i>
-                                            </button>
-                                            <span>Для грантов</span>
-                                        </li>
+                                            </span>
+                                        </label>
+                                    </div>
 
-                                    </ul>
                                 </div>
                                 <div class="catalog-filters-line"></div>
 
 
                                 <div class="c-filter-item">
                                     <p class="c-filter-title">Цвет</p>
+
+
+
+
                                     <ul class="color-filters-list">
                                         <li class="filter-color-black">
                                             <i class="icon icon-check"></i>
@@ -226,104 +232,107 @@
                                 <div class="catalog-filters-line"></div>
 
 
-
                                 <div class="c-filter-item">
                                     <p class="c-filter-title">Скорость генерации</p>
-                                    <ul class="checkbox-filters-list G-flex-column">
-                                        <li>
-                                            <button>
-                                                <i class="icon icon-check"></i>
-                                            </button>
-                                            <span>
-                            <img
-                                    loading="lazy"
-                                    src="assets/images/fast.webp"
-                                    alt="photo"
-                                    width="18"
-                                    height="18"
-                            />
-                            Быстро (до 20 сек)</span
-                                            >
-                                        </li>
 
-                                        <li>
-                                            <button>
-                                                <i class="icon icon-check"></i>
-                                            </button>
-                                            <span>
-                            <img
-                                    loading="lazy"
-                                    src="assets/images/compareIcon1.png"
-                                    alt="photo"
-                                    width="18"
-                                    height="18"
-                            />
-                            Стандарт (20-40 сек)</span
-                                            >
-                                        </li>
 
-                                        <li class="active">
-                                            <button>
+                                    <div class="catalog-check-col G-flex-column">
+                                        <label class="checkbox-chek">
+                                            <small><img
+                                                    loading="lazy"
+                                                    src="assets/images/fast.webp"
+                                                    alt="photo"
+                                                    width="18"
+                                                    height="18"
+                                            />
+                                                Быстро (до 20 сек)</small>
+                                            <input type="checkbox">
+                                            <span class="checkmark">
                                                 <i class="icon icon-check"></i>
-                                            </button>
-                                            <span>
-                            <img
-                                    loading="lazy"
-                                    src="assets/images/decor.webp"
-                                    alt="photo"
-                                    width="18"
-                                    height="18"
-                            />
-                            Подробно (40-60 сек)
-                          </span>
-                                        </li>
+                                            </span>
+                                        </label>
+                                        <label class="checkbox-chek">
+                                            <small>
+                                                <img
+                                                        loading="lazy"
+                                                        src="assets/images/compareIcon1.png"
+                                                        alt="photo"
+                                                        width="18"
+                                                        height="18"
+                                                />
+                                                Стандарт (20-40 сек)
+                                            </small>
+                                            <input type="checkbox">
+                                            <span class="checkmark">
+                                            <i class="icon icon-check"></i>
+                                        </span>
+                                        </label>
+                                        <label class="checkbox-chek">
+                                            <small>
+                                                <img
+                                                        loading="lazy"
+                                                        src="assets/images/decor.webp"
+                                                        alt="photo"
+                                                        width="18"
+                                                        height="18"
+                                                />
+                                                Подробно (40-60 сек)
+                                            </small>
+                                            <input type="checkbox">
+                                            <span class="checkmark">
+                                                <i class="icon icon-check"></i>
+                                            </span>
+                                        </label>
+                                        <label class="checkbox-chek">
+                                            <small>
+                                                <img loading="lazy" src="assets/images/diamond.webp"
+                                                        alt="photo"
+                                                        width="18"
+                                                        height="18"/>
+                                                Премиум (60+ сек)
+                                            </small>
+                                            <input type="checkbox">
+                                            <span class="checkmark">
+                                                <i class="icon icon-check"></i>
+                                            </span>
+                                        </label>
+                                    </div>
 
-                                        <li class="active">
-                                            <button>
-                                                <i class="icon icon-check"></i>
-                                            </button>
-                                            <span>
-                            <img
-                                    loading="lazy"
-                                    src="assets/images/diamond.webp"
-                                    alt="photo"
-                                    width="18"
-                                    height="18"
-                            />
-                            Премиум (60+ сек)
-                          </span>
-                                        </li>
-                                    </ul>
+
                                 </div>
 
                                 <div class="catalog-filters-line"></div>
 
 
-
                                 <div class="c-filter-item">
                                     <p class="c-filter-title">Количество слайдов</p>
-                                    <ul class="checkbox-filters-list G-flex-column">
-                                        <li>
-                                            <button>
-                                                <i class="icon icon-check"></i>
-                                            </button>
-                                            <span>5-10 слайдов</span>
-                                        </li>
 
-                                        <li class="active">
-                                            <button>
+                                    <div class="catalog-check-col G-flex-column">
+                                        <label class="checkbox-chek">
+                                            <small>5-10 слайдов</small>
+                                            <input type="checkbox">
+                                            <span class="checkmark">
                                                 <i class="icon icon-check"></i>
-                                            </button>
-                                            <span>10-20 слайдов</span>
-                                        </li>
+                                            </span>
+                                        </label>
+                                        <label class="checkbox-chek">
+                                            <small>10-20 слайдов</small>
+                                            <input type="checkbox">
+                                            <span class="checkmark">
+                                            <i class="icon icon-check"></i>
+                                        </span>
+                                        </label>
+                                        <label class="checkbox-chek">
+                                            <small>20+ слайдов</small>
+                                            <input type="checkbox">
+                                            <span class="checkmark">
+                                                <i class="icon icon-check"></i>
+                                            </span>
+                                        </label>
 
-                                        <li>
-                                            <button>
-                                                <i class="icon icon-check"></i>
-                                            </button>
-                                            <span>20+ слайдов</span>
-                                        </li>
-                                    </ul>
+                                    </div>
+
+
                                 </div>
 
 
@@ -987,34 +996,37 @@
                         </div>
 
 
-
-
                         <div class="ready-made">
                             <div class="ready-made-info  G-column-center ">
-                                    <div class="section-tag G-align-center">
-                                        <i class="icon icon-star"></i>
-                                        <span>Без дизайнера</span>
-                                    </div>
-                                    <h2 class="section-big-title">
-                                        Начните с <span class="text-blue"> готового</span>
-                                      <br>  <img loading="eager" src="assets/images/points-tite.png" data-light="assets/images/points-tite-ligth.png" data-dark="assets/images/points-tite.png" alt="photo" width="68" height="32">
-                                        шаблона
-                                    </h2>
-                                    <p class="section-sub-title">
-                                        Выберите шаблон, добавьте текст — <br> <strong>получите презентацию</strong>
-                                    </p>
-
-                                    <button class="btn-black trust-btn G-align-center">
-                                        <i class="icon icon-stars"></i>
-                                        <span>Создать презентацию</span>
-                                    </button>
+                                <div class="section-tag G-align-center">
+                                    <i class="icon icon-star"></i>
+                                    <span>Без дизайнера</span>
                                 </div>
+                                <h2 class="section-big-title">
+                                    Начните с <span class="text-blue"> готового</span>
+                                    <br> <img loading="eager" src="assets/images/points-tite.png"
+                                              data-light="assets/images/points-tite-ligth.png"
+                                              data-dark="assets/images/points-tite.png" alt="photo" width="68"
+                                              height="32">
+                                    шаблона
+                                </h2>
+                                <p class="section-sub-title">
+                                    Выберите шаблон, добавьте текст — <br> <strong>получите презентацию</strong>
+                                </p>
+
+                                <button class="btn-black trust-btn G-align-center">
+                                    <i class="icon icon-stars"></i>
+                                    <span>Создать презентацию</span>
+                                </button>
+                            </div>
                             <div class="ready-made-photo">
 
-                                <img loading="eager" src="assets/images/made-cta.png" data-light="assets/images/made-cta-ligth.png" data-dark="assets/images/made-cta.png" class="made-cta-desc" alt="photo" >
-                                <img loading="eager" src="assets/images/made-cta-mob.png" data-light="assets/images/made-cta-lig-mob.png" data-dark="assets/images/made-cta-mob.png" class="made-cta-mob" alt="photo" >
-
-
+                                <img loading="eager" src="assets/images/made-cta.png"
+                                     data-light="assets/images/made-cta-ligth.png"
+                                     data-dark="assets/images/made-cta.png" class="made-cta-desc" alt="photo">
+                                <img loading="eager" src="assets/images/made-cta-mob.png"
+                                     data-light="assets/images/made-cta-lig-mob.png"
+                                     data-dark="assets/images/made-cta-mob.png" class="made-cta-mob" alt="photo">
 
 
                             </div>
@@ -1023,10 +1035,14 @@
                         <div class="info-block-title">
                             <h2>Заголовок информационного блока H2</h2>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                             </p>
                             <p>
-                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                officia deserunt mollit anim id est laborum.
                             </p>
                             <h4>Подзаголовок внутри текста:</h4>
                             <ul>
@@ -1049,47 +1065,59 @@
                             <div class="smart-temp-wrap G-flex-wrap">
                                 <div class="smart-temp-boxes">
                                     <div class="smart-temp-pic G-flex">
-                                        <img loading="eager" src="assets/images/smart-temp.png" data-light="assets/images/smart-temp-ligth.png" data-dark="assets/images/smart-temp.png" alt="smart" >
+                                        <img loading="eager" src="assets/images/smart-temp.png"
+                                             data-light="assets/images/smart-temp-ligth.png"
+                                             data-dark="assets/images/smart-temp.png" alt="smart">
                                     </div>
-                                     <div class="smart-temp-text">
-                                         <h4><img loading="lazy" src="assets/images/objekts.png" alt="photo" width="18" height="18"> Современный дизайн</h4>
+                                    <div class="smart-temp-text">
+                                        <h4><img loading="lazy" src="assets/images/objekts.png" alt="photo" width="18"
+                                                 height="18"> Современный дизайн</h4>
                                         <p>
                                             <strong>Трендовые</strong> геометрические формы, абстракция и градиенты
                                         </p>
-                                     </div>
+                                    </div>
                                 </div>
                                 <div class="smart-temp-boxes">
                                     <div class="smart-temp-pic G-flex">
-                                        <img loading="eager" src="assets/images/editable-ligth.png" data-light="assets/images/editable.png" data-dark="assets/images/editable-ligth.png" alt="smart" >
+                                        <img loading="eager" src="assets/images/editable-ligth.png"
+                                             data-light="assets/images/editable.png"
+                                             data-dark="assets/images/editable-ligth.png" alt="smart">
                                     </div>
                                     <div class="upload-wrapper">
 
-                                       <div class="upload-bord G-flex-column G-align-center">
-                                           <img loading="eager" src="assets/images/upl.svg" data-light="assets/images/upl-ligth.svg" data-dark="assets/images/upl.svg" alt="smart" >
-                                           <div class="drop-title">Перетащите или загрузите фото</div>
-                                           <div class="drop-subtitle">PNG / JPEG / WEBP</div>
-                                           <input type="file" accept="image/png,image/jpeg,image/webp" />
-                                           <button class="btn-start" >
-                                               Выбрать фото
-                                           </button>
-                                       </div>
+                                        <div class="upload-bord G-flex-column G-align-center">
+                                            <img loading="eager" src="assets/images/upl.svg"
+                                                 data-light="assets/images/upl-ligth.svg"
+                                                 data-dark="assets/images/upl.svg" alt="smart">
+                                            <div class="drop-title">Перетащите или загрузите фото</div>
+                                            <div class="drop-subtitle">PNG / JPEG / WEBP</div>
+                                            <input type="file" accept="image/png,image/jpeg,image/webp"/>
+                                            <button class="btn-start">
+                                                Выбрать фото
+                                            </button>
+                                        </div>
 
                                     </div>
 
 
                                     <div class="smart-temp-text">
-                                        <h4><img loading="lazy" src="assets/images/drawing.png" alt="photo" width="18" height="18">  Редактируемые картинки</h4>
+                                        <h4><img loading="lazy" src="assets/images/drawing.png" alt="photo" width="18"
+                                                 height="18"> Редактируемые картинки</h4>
                                         <p>
-                                            Сгенерированные изображения можно <strong>легко заменить</strong> на свои фото
+                                            Сгенерированные изображения можно <strong>легко заменить</strong> на свои
+                                            фото
                                         </p>
                                     </div>
                                 </div>
                                 <div class="smart-temp-boxes">
                                     <div class="smart-temp-pic smart-diag G-flex">
-                                        <img loading="eager" src="assets/images/diagrams-box.png" data-light="assets/images/diagrams-box-light.png" data-dark="assets/images/diagrams-box.png" alt="smart" >
+                                        <img loading="eager" src="assets/images/diagrams-box.png"
+                                             data-light="assets/images/diagrams-box-light.png"
+                                             data-dark="assets/images/diagrams-box.png" alt="smart">
                                     </div>
                                     <div class="smart-temp-text">
-                                        <h4><img loading="lazy" src="assets/images/lin-tert.png" alt="photo" width="18" height="18"> Диаграммы</h4>
+                                        <h4><img loading="lazy" src="assets/images/lin-tert.png" alt="photo" width="18"
+                                                 height="18"> Диаграммы</h4>
                                         <p>
                                             15+ видов <strong>редактируемых</strong> схем и графиков
                                         </p>
@@ -1117,7 +1145,8 @@
                                         </div>
                                     </div>
                                     <div class="smart-temp-text">
-                                        <h4><img loading="lazy" src="assets/images/pen.png" alt="photo" width="18" height="18"> Гибкий контент</h4>
+                                        <h4><img loading="lazy" src="assets/images/pen.png" alt="photo" width="18"
+                                                 height="18"> Гибкий контент</h4>
                                         <p>
                                             Все объекты полностью <strong>редактируемы</strong>
                                         </p>
@@ -1125,10 +1154,13 @@
                                 </div>
                                 <div class="smart-temp-boxes">
                                     <div class="smart-temp-pic  G-flex">
-                                        <img loading="eager" src="assets/images/star-muk.png" data-light="assets/images/star-muk-ligth.png" data-dark="assets/images/star-muk.png" alt="smart" >
+                                        <img loading="eager" src="assets/images/star-muk.png"
+                                             data-light="assets/images/star-muk-ligth.png"
+                                             data-dark="assets/images/star-muk.png" alt="smart">
                                     </div>
                                     <div class="smart-temp-text">
-                                        <h4><img loading="lazy" src="assets/images/raket.png" alt="photo" width="18" height="18"> Инфографика</h4>
+                                        <h4><img loading="lazy" src="assets/images/raket.png" alt="photo" width="18"
+                                                 height="18"> Инфографика</h4>
                                         <p>
                                             <strong>200+</strong> готовых графических элементов
                                         </p>
@@ -1142,12 +1174,16 @@
                                         <div class="swiper-slide">
                                             <div class="smart-temp-boxes">
                                                 <div class="smart-temp-pic G-flex">
-                                                    <img loading="eager" src="assets/images/smart-temp-mob.png" data-light="assets/images/smart-temp-mob-ligth.png" data-dark="assets/images/smart-temp-mob.png" alt="smart" >
+                                                    <img loading="eager" src="assets/images/smart-temp-mob.png"
+                                                         data-light="assets/images/smart-temp-mob-ligth.png"
+                                                         data-dark="assets/images/smart-temp-mob.png" alt="smart">
                                                 </div>
                                                 <div class="smart-temp-text">
-                                                    <h4><img loading="lazy" src="assets/images/objekts.png" alt="photo" width="18" height="18"> Современный дизайн</h4>
+                                                    <h4><img loading="lazy" src="assets/images/objekts.png" alt="photo"
+                                                             width="18" height="18"> Современный дизайн</h4>
                                                     <p>
-                                                        <strong>Трендовые</strong> геометрические формы, абстракция и градиенты
+                                                        <strong>Трендовые</strong> геометрические формы, абстракция и
+                                                        градиенты
                                                     </p>
                                                 </div>
                                             </div>
@@ -1155,16 +1191,20 @@
                                         <div class="swiper-slide">
                                             <div class="smart-temp-boxes">
                                                 <div class="smart-temp-pic G-flex">
-                                                    <img loading="eager" src="assets/images/editable-ligth-mob.png" data-light="assets/images/editable-mob.png" data-dark="assets/images/editable-ligth-mob.png" alt="smart" >
+                                                    <img loading="eager" src="assets/images/editable-ligth-mob.png"
+                                                         data-light="assets/images/editable-mob.png"
+                                                         data-dark="assets/images/editable-ligth-mob.png" alt="smart">
                                                 </div>
                                                 <div class="upload-wrapper">
 
                                                     <div class="upload-bord G-flex-column G-align-center">
-                                                        <img loading="eager" src="assets/images/upl.svg" data-light="assets/images/upl-ligth.svg" data-dark="assets/images/upl.svg" alt="smart" >
+                                                        <img loading="eager" src="assets/images/upl.svg"
+                                                             data-light="assets/images/upl-ligth.svg"
+                                                             data-dark="assets/images/upl.svg" alt="smart">
                                                         <div class="drop-title">Перетащите или загрузите фото</div>
                                                         <div class="drop-subtitle">PNG / JPEG / WEBP</div>
-                                                        <input type="file"  accept="image/png,image/jpeg,image/webp" />
-                                                        <button class="btn-start" >
+                                                        <input type="file" accept="image/png,image/jpeg,image/webp"/>
+                                                        <button class="btn-start">
                                                             Выбрать фото
                                                         </button>
                                                     </div>
@@ -1173,9 +1213,11 @@
 
 
                                                 <div class="smart-temp-text">
-                                                    <h4><img loading="lazy" src="assets/images/drawing.png" alt="photo" width="18" height="18">  Редактируемые картинки</h4>
+                                                    <h4><img loading="lazy" src="assets/images/drawing.png" alt="photo"
+                                                             width="18" height="18"> Редактируемые картинки</h4>
                                                     <p>
-                                                        Сгенерированные изображения можно <strong>легко заменить</strong> на свои фото
+                                                        Сгенерированные изображения можно <strong>легко
+                                                        заменить</strong> на свои фото
                                                     </p>
                                                 </div>
                                             </div>
@@ -1183,10 +1225,13 @@
                                         <div class="swiper-slide">
                                             <div class="smart-temp-boxes">
                                                 <div class="smart-temp-pic smart-diag G-flex">
-                                                    <img loading="eager" src="assets/images/diagrams-box.png" data-light="assets/images/diagrams-box-light.png" data-dark="assets/images/diagrams-box.png" alt="smart" >
+                                                    <img loading="eager" src="assets/images/diagrams-box.png"
+                                                         data-light="assets/images/diagrams-box-light.png"
+                                                         data-dark="assets/images/diagrams-box.png" alt="smart">
                                                 </div>
                                                 <div class="smart-temp-text">
-                                                    <h4><img loading="lazy" src="assets/images/lin-tert.png" alt="photo" width="18" height="18"> Диаграммы</h4>
+                                                    <h4><img loading="lazy" src="assets/images/lin-tert.png" alt="photo"
+                                                             width="18" height="18"> Диаграммы</h4>
                                                     <p>
                                                         15+ видов <strong>редактируемых</strong> схем и графиков
                                                     </p>
@@ -1216,7 +1261,8 @@
                                                     </div>
                                                 </div>
                                                 <div class="smart-temp-text">
-                                                    <h4><img loading="lazy" src="assets/images/pen.png" alt="photo" width="18" height="18"> Гибкий контент</h4>
+                                                    <h4><img loading="lazy" src="assets/images/pen.png" alt="photo"
+                                                             width="18" height="18"> Гибкий контент</h4>
                                                     <p>
                                                         Все объекты полностью <strong>редактируемы</strong>
                                                     </p>
@@ -1226,10 +1272,13 @@
                                         <div class="swiper-slide">
                                             <div class="smart-temp-boxes">
                                                 <div class="smart-temp-pic  G-flex">
-                                                    <img loading="eager" src="assets/images/star-muk.png" data-light="assets/images/star-muk-ligth.png" data-dark="assets/images/star-muk.png" alt="smart" >
+                                                    <img loading="eager" src="assets/images/star-muk.png"
+                                                         data-light="assets/images/star-muk-ligth.png"
+                                                         data-dark="assets/images/star-muk.png" alt="smart">
                                                 </div>
                                                 <div class="smart-temp-text">
-                                                    <h4><img loading="lazy" src="assets/images/raket.png" alt="photo" width="18" height="18"> Инфографика</h4>
+                                                    <h4><img loading="lazy" src="assets/images/raket.png" alt="photo"
+                                                             width="18" height="18"> Инфографика</h4>
                                                     <p>
                                                         <strong>200+</strong> готовых графических элементов
                                                     </p>
@@ -1246,10 +1295,11 @@
                         <div class="smart-temp">
                             <div class="smart-temp-title G-flex-column G-align-center">
                                 <h2 class="section-title">
-                                    Как стартапы используют  <span class="text-blue">Slidy</span>
+                                    Как стартапы используют <span class="text-blue">Slidy</span>
                                 </h2>
                                 <p class="section-sub-title">
-                                    Реальные сценарии: от питча до отчёта. <br> <strong>С конкретикой и результатом</strong>
+                                    Реальные сценарии: от питча до отчёта. <br> <strong>С конкретикой
+                                    и результатом</strong>
                                 </p>
                             </div>
                             <div class="startups-slidy G-flex">
@@ -1260,7 +1310,8 @@
                                             <i class="icco icon-astxik"></i>
                                         </div>
                                         <div class="smart-temp-text">
-                                            <h4><img loading="lazy" src="assets/images/compareIcon1.png" alt="photo" width="20" height="20"> Питч-дек</h4>
+                                            <h4><img loading="lazy" src="assets/images/compareIcon1.png" alt="photo"
+                                                     width="20" height="20"> Питч-дек</h4>
                                             <p>
                                                 Загрузили текст — получили слайды. Инвесторы видят идею, а не вёрстку.
                                             </p>
@@ -1272,9 +1323,11 @@
                                             <i class="icco icon-astxik"></i>
                                         </div>
                                         <div class="smart-temp-text">
-                                            <h4><img loading="lazy" src="assets/images/micrafon.png" alt="photo" width="20" height="20"> Выступление</h4>
+                                            <h4><img loading="lazy" src="assets/images/micrafon.png" alt="photo"
+                                                     width="20" height="20"> Выступление</h4>
                                             <p>
-                                                Презентация для сцены готова за минуты. Дизайн — как у профессионального агентства, без найма дизайнера.
+                                                Презентация для сцены готова за минуты. Дизайн — как у профессионального
+                                                агентства, без найма дизайнера.
                                             </p>
                                         </div>
                                     </div>
@@ -1286,9 +1339,11 @@
                                             <i class="icco icon-astxik"></i>
                                         </div>
                                         <div class="smart-temp-text">
-                                            <h4><img loading="lazy" src="assets/images/road-map.png" alt="photo" width="20" height="20"> Roadmap</h4>
+                                            <h4><img loading="lazy" src="assets/images/road-map.png" alt="photo"
+                                                     width="20" height="20"> Roadmap</h4>
                                             <p>
-                                                ИИ сам разложил этапы развития продукта по слайдам. Графики и вехи визуализированы. Не нужно чертить стрелки и выравнивать блоки вручную.
+                                                ИИ сам разложил этапы развития продукта по слайдам. Графики и вехи
+                                                визуализированы. Не нужно чертить стрелки и выравнивать блоки вручную.
                                             </p>
                                         </div>
                                     </div>
@@ -1298,9 +1353,12 @@
                                             <i class="icco icon-astxik"></i>
                                         </div>
                                         <div class="smart-temp-text">
-                                            <h4><img loading="lazy" src="assets/images/kubok.png" alt="photo" width="18" height="18"> Акселератор</h4>
+                                            <h4><img loading="lazy" src="assets/images/kubok.png" alt="photo" width="18"
+                                                     height="18"> Акселератор</h4>
                                             <p>
-                                                Презентация для отбора в акселератор готова через 2 минуты. Структура, дизайн, бренд — всё под контролем. Далее дорабатываете детали во встроенном редакторе.
+                                                Презентация для отбора в акселератор готова через 2 минуты. Структура,
+                                                дизайн, бренд — всё под контролем. Далее дорабатываете детали
+                                                во встроенном редакторе.
                                             </p>
                                         </div>
                                     </div>
@@ -1312,9 +1370,11 @@
                                             <i class="icco icon-astxik"></i>
                                         </div>
                                         <div class="smart-temp-text">
-                                            <h4><img loading="lazy" src="assets/images/lin-tert.png" alt="photo" width="18" height="18"> Отчёт</h4>
+                                            <h4><img loading="lazy" src="assets/images/lin-tert.png" alt="photo"
+                                                     width="18" height="18"> Отчёт</h4>
                                             <p>
-                                                Большие данные — не проблема. Таблицы и графики структурированы. Открываете в PowerPoint и показываете.
+                                                Большие данные — не проблема. Таблицы и графики структурированы.
+                                                Открываете в PowerPoint и показываете.
                                             </p>
                                         </div>
                                     </div>
@@ -1324,9 +1384,11 @@
                                             <i class="icco icon-astxik"></i>
                                         </div>
                                         <div class="smart-temp-text">
-                                            <h4><img loading="lazy" src="assets/images/busines.png" alt="photo" width="24" height="24"> Инвесторам</h4>
+                                            <h4><img loading="lazy" src="assets/images/busines.png" alt="photo"
+                                                     width="24" height="24"> Инвесторам</h4>
                                             <p>
-                                                AI продумал логику и вёрстку — от структуры до типографики. Вам остаётся добавить цифры и факты. Готово.
+                                                AI продумал логику и вёрстку — от структуры до типографики. Вам остаётся
+                                                добавить цифры и факты. Готово.
                                             </p>
                                         </div>
                                     </div>
@@ -1343,9 +1405,11 @@
                                                     <i class="icco icon-astxik"></i>
                                                 </div>
                                                 <div class="smart-temp-text">
-                                                    <h4><img loading="lazy" src="assets/images/compareIcon1.png" alt="photo" width="20" height="20"> Питч-дек</h4>
+                                                    <h4><img loading="lazy" src="assets/images/compareIcon1.png"
+                                                             alt="photo" width="20" height="20"> Питч-дек</h4>
                                                     <p>
-                                                        Загрузили текст — получили слайды. Инвесторы видят идею, а не вёрстку.
+                                                        Загрузили текст — получили слайды. Инвесторы видят идею,
+                                                        а не вёрстку.
                                                     </p>
                                                 </div>
                                             </div>
@@ -1358,9 +1422,12 @@
                                                     <i class="icco icon-astxik"></i>
                                                 </div>
                                                 <div class="smart-temp-text">
-                                                    <h4><img loading="lazy" src="assets/images/road-map.png" alt="photo" width="20" height="20"> Roadmap</h4>
+                                                    <h4><img loading="lazy" src="assets/images/road-map.png" alt="photo"
+                                                             width="20" height="20"> Roadmap</h4>
                                                     <p>
-                                                        ИИ сам разложил этапы развития продукта по слайдам. Графики и вехи визуализированы. Не нужно чертить стрелки и выравнивать блоки вручную.
+                                                        ИИ сам разложил этапы развития продукта по слайдам. Графики
+                                                        и вехи визуализированы. Не нужно чертить стрелки и выравнивать
+                                                        блоки вручную.
                                                     </p>
                                                 </div>
                                             </div>
@@ -1373,9 +1440,11 @@
                                                     <i class="icco icon-astxik"></i>
                                                 </div>
                                                 <div class="smart-temp-text">
-                                                    <h4><img loading="lazy" src="assets/images/lin-tert.png" alt="photo" width="18" height="18"> Отчёт</h4>
+                                                    <h4><img loading="lazy" src="assets/images/lin-tert.png" alt="photo"
+                                                             width="18" height="18"> Отчёт</h4>
                                                     <p>
-                                                        Большие данные — не проблема. Таблицы и графики структурированы. Открываете в PowerPoint и показываете.
+                                                        Большие данные — не проблема. Таблицы и графики структурированы.
+                                                        Открываете в PowerPoint и показываете.
                                                     </p>
                                                 </div>
                                             </div>
@@ -1388,9 +1457,11 @@
                                                     <i class="icco icon-astxik"></i>
                                                 </div>
                                                 <div class="smart-temp-text">
-                                                    <h4><img loading="lazy" src="assets/images/micrafon.png" alt="photo" width="20" height="20"> Выступление</h4>
+                                                    <h4><img loading="lazy" src="assets/images/micrafon.png" alt="photo"
+                                                             width="20" height="20"> Выступление</h4>
                                                     <p>
-                                                        Презентация для сцены готова за минуты. Дизайн — как у профессионального агентства, без найма дизайнера.
+                                                        Презентация для сцены готова за минуты. Дизайн —
+                                                        как у профессионального агентства, без найма дизайнера.
                                                     </p>
                                                 </div>
                                             </div>
@@ -1403,9 +1474,12 @@
                                                     <i class="icco icon-astxik"></i>
                                                 </div>
                                                 <div class="smart-temp-text">
-                                                    <h4><img loading="lazy" src="assets/images/kubok.png" alt="photo" width="18" height="18"> Акселератор</h4>
+                                                    <h4><img loading="lazy" src="assets/images/kubok.png" alt="photo"
+                                                             width="18" height="18"> Акселератор</h4>
                                                     <p>
-                                                        Презентация для отбора в акселератор готова через 2 минуты. Структура, дизайн, бренд — всё под контролем. Далее дорабатываете детали во встроенном редакторе.
+                                                        Презентация для отбора в акселератор готова через 2 минуты.
+                                                        Структура, дизайн, бренд — всё под контролем. Далее
+                                                        дорабатываете детали во встроенном редакторе.
                                                     </p>
                                                 </div>
                                             </div>
@@ -1418,9 +1492,11 @@
                                                     <i class="icco icon-astxik"></i>
                                                 </div>
                                                 <div class="smart-temp-text">
-                                                    <h4><img loading="lazy" src="assets/images/busines.png" alt="photo" width="24" height="24"> Инвесторам</h4>
+                                                    <h4><img loading="lazy" src="assets/images/busines.png" alt="photo"
+                                                             width="24" height="24"> Инвесторам</h4>
                                                     <p>
-                                                        AI продумал логику и вёрстку — от структуры до типографики. Вам остаётся добавить цифры и факты. Готово.
+                                                        AI продумал логику и вёрстку — от структуры до типографики.
+                                                        Вам остаётся добавить цифры и факты. Готово.
                                                     </p>
                                                 </div>
                                             </div>
@@ -1441,7 +1517,7 @@
                                 </div>
                                 <h2 class="section-big-title">
                                     <span class="text-blue">2 млн+</span> пользователей
-                                   <br> уже выбрали Slidy — твоя очередь
+                                    <br> уже выбрали Slidy — твоя очередь
                                 </h2>
 
                                 <div class="users-choice-cnt">
@@ -1449,7 +1525,10 @@
                                         <img src="./assets/images/star-choi.png" alt="star"> 4.9
                                     </div>
                                     <div class="areas-users G-flex">
-                                        <img loading="lazy" src="assets/images/users-cat.png" data-light="assets/images/users-cat-ligth.png" data-dark="assets/images/users-cat.png" alt="photo" width="267" height="72">
+                                        <img loading="lazy" src="assets/images/users-cat.png"
+                                             data-light="assets/images/users-cat-ligth.png"
+                                             data-dark="assets/images/users-cat.png" alt="photo" width="267"
+                                             height="72">
                                     </div>
                                     <div class="users-cho-slaq G-flex">
                                         <img src="./assets/images/icon-slaq.png" alt="slaq">
@@ -1462,9 +1541,13 @@
                                 </button>
                             </div>
                             <div class="ready-made-photo">
-                                <img loading="eager" src="assets/images/users-choice.png" data-light="assets/images/users-choice-ligth.png" data-dark="assets/images/users-choice.png" class="made-cta-desc" alt="photo" >
+                                <img loading="eager" src="assets/images/users-choice.png"
+                                     data-light="assets/images/users-choice-ligth.png"
+                                     data-dark="assets/images/users-choice.png" class="made-cta-desc" alt="photo">
 
-                                <img loading="eager" src="assets/images/users-choice-mob.png" data-light="assets/images/users-choice-mob-ligth.png" data-dark="assets/images/users-choice-mob.png" class="made-cta-mob" alt="photo" >
+                                <img loading="eager" src="assets/images/users-choice-mob.png"
+                                     data-light="assets/images/users-choice-mob-ligth.png"
+                                     data-dark="assets/images/users-choice-mob.png" class="made-cta-mob" alt="photo">
 
                             </div>
                         </div>
@@ -1475,7 +1558,8 @@
                                     Популярные категории
                                 </h2>
                                 <p class="section-sub-title">
-                                    Подборка смежных разделов: <strong>готовые макеты</strong> <br> для разных задач и отраслей
+                                    Подборка смежных разделов: <strong>готовые макеты</strong> <br> для разных задач
+                                    и отраслей
                                 </p>
                             </div>
 
@@ -1535,11 +1619,15 @@
                         <div class="info-block-title">
                             <h2>Заголовок SEO-блока H2 уровня</h2>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                             </p>
                             <h3>Подзаголовок H3</h3>
                             <p>
-                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                officia deserunt mollit anim id est laborum.
                             </p>
                             <div class="info-block-col G-flex-column">
                                 <div class="info-block-point">
@@ -1604,7 +1692,8 @@
                             </div>
                             <div class="numbered-omnis">
                                 <h3>Подзаголовок H3</h3>
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                    laudantium</p>
                                 <ul>
                                     <li>Первый элемент списка распространенных ошибок с пояснением</li>
                                     <li>Первый элемент списка распространенных ошибок с пояснением</li>
@@ -1625,8 +1714,6 @@
             </div>
 
         </section>
-
-
 
 
         <div class="template-description-modal">
@@ -2058,7 +2145,7 @@
         </div>
     </main>
 
-    <footer class="footer">
+    <footer>
         <div class="loss-quality-elips G-flex">
             <img loading="lazy" src="./assets/images/elip-dark.png" alt="photo">
         </div>

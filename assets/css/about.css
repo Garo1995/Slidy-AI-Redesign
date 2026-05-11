@@ -451,15 +451,14 @@
   justify-content: space-between;
   gap: 10px;
 }
+.history-action-header .icon-wheel{
+  width: 24px;
+  height: 24px;
+}
 .history-action-header p {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
   color: var(--text-color5);
 }
-.history-action-header img {
-  display: flex;
-}
+
 .history-item-action ul {
   margin-top: 80px;
   display: flex;
@@ -468,7 +467,6 @@
 }
 .history-item-action ul li {
   margin-left: 20px;
-  font-weight: 400;
   font-size: 18px;
   line-height: 24px;
   color: var(--text-color6);

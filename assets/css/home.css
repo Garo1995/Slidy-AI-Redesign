@@ -1,4 +1,11 @@
 
+
+h3 {
+  color: var(--text-color);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+}
 p{
   font-weight: 400;
   font-size: 16px;
@@ -8,7 +15,11 @@ p{
 
 }
 
-
+ul li{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
 
 
 
@@ -271,8 +282,6 @@ display: block;
   margin-top: 11px;
 }
 .hero-titles p {
-  color: var(--text-color6);
-  font-weight: 400;
   font-size: 18px;
   line-height: 24px;
   text-align: center;
@@ -863,8 +872,6 @@ display: block;
 }
 .e-column-hints--one p {
   font-weight: 500;
-  font-size: 16px;
-  line-height: 22px;
   color: var(--text-color);
 }
 
@@ -884,8 +891,6 @@ display: block;
 }
 .e-column-hints--two p {
   font-weight: 500;
-  font-size: 16px;
-  line-height: 22px;
   color: var(--text-color);
 }
 
@@ -1622,15 +1627,16 @@ display: block;
 .areas-right-header {
   justify-content: space-between;
 }
+.areas-right-header .icon-wheel{
+  width: 24px;
+  height: 24px;
+}
 .areas-right-header p {
-  font-weight: 400;
   font-size: 18px;
   line-height: 24px;
   color: var(--text-color5);
 }
-.areas-right-header img {
-  display: flex;
-}
+
 .areas-descr-header p {
   font-weight: 600;
   font-size: 24px;
@@ -1646,7 +1652,6 @@ display: block;
 }
 .areas-descr-cnt p {
   color: var(--text-color);
-  font-weight: 400;
   font-size: 18px;
   line-height: 24px;
 }
@@ -1655,7 +1660,6 @@ display: block;
 }
 .areas-descr-cnt ul li {
   margin-left: 25px;
-  font-weight: 400;
   font-size: 18px;
   line-height: 24px;
   color: var(--text-color);
@@ -2073,9 +2077,6 @@ display: block;
   margin-top: 16px;
 }
 .reviews-texts p {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
   color: var(--text-color);
 }
 .reviews-texts a {
@@ -2233,7 +2234,10 @@ display: block;
     padding: 0 14px;
     overflow: auto;
   }
-
+  h3 {
+    font-size: 22px;
+    line-height: 24px;
+  }
   .advantages-columns::-webkit-scrollbar {
     height: 3px;
   }
@@ -2408,6 +2412,7 @@ display: block;
     margin: 24px auto 0;
     gap: 8px;
     border: unset;
+    max-width: 490px;
   }
   .hero-generate.active {
     border: unset;
@@ -2668,6 +2673,9 @@ display: block;
   .e-hints-select p {
     font-size: 6px;
     line-height: 7px;
+  }
+  h3 {
+    font-size: 20px;
   }
   .e-hints-select i {
     font-size: 5px;

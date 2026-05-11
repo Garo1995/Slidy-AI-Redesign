@@ -85,11 +85,11 @@
     line-height: 20px;
     margin-top: 0;
 }
-.info-block-title p, .info-block-title ul li{
+.info-block-title p{
     margin-top: 12px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
+}
+.info-block-title ul li{
+    margin-top: 12px;
     color: var(--text-color6);
 }
 .info-block-title h4{
@@ -153,10 +153,6 @@
 }
 .smart-temp-text p{
     margin-top: 8px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    color: var(--text-color6);
 }
 .smart-temp-text{
     padding: 20px;

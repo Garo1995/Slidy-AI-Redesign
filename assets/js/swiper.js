@@ -326,3 +326,34 @@ const simiSwiper = new Swiper(".similar-templates-slider", {
     },
   },
 });
+
+
+const collectionSwiper = new Swiper(".collection-slider", {
+  spaceBetween: 10,
+  slidesPerView:2,
+  pagination: {
+    el: ".collection-pagination",
+    clickable: true,
+  },
+
+  breakpoints: {
+    '1020': {
+      spaceBetween: 10,
+      slidesPerView:2,
+    },
+    '767': {
+      spaceBetween: 10,
+      slidesPerView:2,
+    },
+    '640': {
+      slidesPerGroup: 1,
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    '320': {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      spaceBetween: 10,
+    },
+  },
+});

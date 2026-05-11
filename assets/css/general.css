@@ -238,7 +238,7 @@ strong {
 .btn-black {
   gap: 6px;
   padding: 12px 20px;
-  font-family: Inter;
+  font-family: "Inter";
   font-weight: 600;
   font-size: 18px;
   line-height: 24px;
@@ -246,6 +246,11 @@ strong {
   color: var(--main-container5);
   background: var(--text-color);
   transition: 0.3s;
+  width: max-content;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .btn-black i {
   background: var(--main-container5);
@@ -288,9 +293,6 @@ strong {
 }
 
 .bread-crumbs ul li a {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
   color: var(--text-color);
   opacity: 0.6;
 }
@@ -314,8 +316,6 @@ strong {
   margin-top: 28px;
 }
 .fisrt-section-titles p {
-  color: var(--text-color6);
-  font-weight: 400;
   font-size: 18px;
   line-height: 24px;
   text-align: center;

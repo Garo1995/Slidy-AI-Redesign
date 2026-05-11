@@ -1,0 +1,1882 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8"/>
+
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Slidy-AI-Redesign</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+          rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<header class="header">
+<div class="container">
+    <div class="header-body G-align-center">
+        <div class="header-tools G-align-center">
+            <a href="index.html" class="header-logo G-flex">
+                <img
+                        loading="eager"
+                        src="assets/images/logo.svg"
+                        data-light="assets/images/logo.svg"
+                        data-dark="assets/images/logo-dark.svg"
+                        alt="logo"
+                        fetchpriority="high"
+                        width="96"
+                        height="29"
+                        style="width: auto; height: auto"
+                />
+            </a>
+
+        </div>
+
+        <div class="header-actions G-align-center">
+            <div class="language-select-wrapper header-select-wrapper">
+                <div class="language-select-header G-align-center">
+                    <div class="l-select-flag G-flex">
+                        <img
+                                loading="lazy"
+                                src="assets/images/flag1.svg"
+                                alt="photo"
+                                width="28"
+                                height="20"
+                        />
+                    </div>
+                    <p>Русский</p>
+                    <i class="icon icon-arrow-down"></i>
+                </div>
+            </div>
+
+            <a href="#" class="btn-login">
+                <span class="desktop-block">Вход</span>
+                <i class="icon icon-login mobile-block"></i>
+            </a>
+            <a href="#" class="btn-register">
+                <span class="desktop-block">Попробовать бесплатно</span>
+                <i class="icon icon-arrow mobile-block"></i>
+            </a>
+        </div>
+    </div>
+</div>
+</header>
+<section class="prompts-section">
+    <div class="container">
+        <div class="hero-body">
+            <div class="hero-body">
+                <div class="hero-titles fade-top G-column-center">
+                    <div class="bread-crumbs fade-top show">
+                        <ul>
+                            <li>
+                                <a href="index.html">Главная</a>
+                            </li>
+                            <li>
+                                <span>/</span>
+                            </li>
+                            <li>
+                                <a href="#">Ресурсы</a>
+                            </li>
+                            <li>
+                                <span>/</span>
+                            </li>
+                            <li>
+                                <a class="active" href="#">Промпты</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <h1>
+                        Библиотека <span class="text-blue">промптов </span> <br> для презентаций
+                    </h1>
+                    <p>
+                        Библиотека <strong>готовых запросов</strong> для Slidy. Экономия времени, <br> предсказуемый результат, минимум правок.
+                    </p>
+                </div>
+                <div class="hero-generate fade-bottom G-align-center">
+                    <label>
+                        <input name="generate" placeholder="Поиск по промптам, категориям и подборкам..." type="text"/>
+                    </label>
+                    <button class="btn-register G-align-center">
+                        <span>Найти промпт</span>
+                    </button>
+                </div>
+                <div class="presentations-flex G-center fade-bottom">
+                    <p><img loading="lazy" src="assets/images/brain.png" alt="photo" width="18" height="18"> 120+ промптов в библиотеке</p>
+                    <span>|</span>
+                    <p><img loading="lazy" src="assets/images/raket.png" alt="photo" width="18" height="18"> 9 категорий</p>
+                    <span>|</span>
+                    <p><img loading="lazy" src="assets/images/star.svg" alt="photo" width="18" height="18"> 15 подборок</p>
+                    <span>|</span>
+                    <p><img loading="lazy" src="assets/images/compareIcon1.png" alt="photo" width="18" height="18"> 30+ обновлений в месяц</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero-bg G-flex">
+        <img
+                loading="eager"
+                src="assets/images/prompts.png"
+                data-light="assets/images/prompts-ligth.png"
+                data-dark="assets/images/prompts.png"
+                alt="photo"
+                class="img-desktop"
+                width="1920"
+                height="500"
+        />
+
+        <img
+                loading="eager"
+                src="assets/images/prompts-mob.png"
+                data-light="assets/images/prompts-mob-ligth.png"
+                data-dark="assets/images/prompts-mob.png"
+                alt="photo"
+                class="img-mobile"
+                width="1040"
+                height="500"
+        />
+    </div>
+
+
+</section>
+
+<section class="collections-made">
+    <div class="container">
+        <div class="section-titles fade-bottom G-column-center show">
+            <div class="section-tag G-align-center">
+                <i class="icon icon-star"></i>
+                <span>Для любых задач</span>
+            </div>
+            <h2 class="section-title">
+                Готовые подборки, которые <br> <span class="text-blue">экономят время </span>
+            </h2>
+            <p class="section-sub-title">
+                Не нужно перебирать все промпты — мы уже <br> сгруппировали их <strong>под конкретные цели</strong>
+            </p>
+        </div>
+
+
+        <div class="collect-cnt-wrap G-flex-wrap">
+            <div class="collections-boxes">
+                <div class="collections-head G-align-center G-justify-between">
+                    <span>14 ПРОМПТОВ</span>
+                    <div class="catalog-item-link G-center">
+                        <i class="icon icon-arrow"></i>
+                    </div>
+                </div>
+                <div class="collections-text">
+                    <h3>
+                        <img loading="lazy" src="assets/images/compareIcon1.png" alt="photo" width="18" height="18">
+                        Питчи для стартапов
+                    </h3>
+                    <p>Промпты для эффективных презентаций <strong>инвесторам, акселераторам и Demo Day</strong></p>
+                    <div class="collections-wrap G-flex-wrap">
+                        <div class="slidy-turns-name G-center">
+                            <i class="icco icon-astxik"></i>
+                            <p>Финансы</p>
+                        </div>
+                        <div class="slidy-turns-name G-center">
+                            <i class="icco icon-astxik"></i>
+                            <p>Рынок</p>
+                        </div>
+                        <div class="slidy-turns-name G-center">
+                            <i class="icco icon-astxik"></i>
+                            <p>Посевной раунд</p>
+                        </div>
+                        <div class="slidy-turns-name G-center">
+                            <i class="icco icon-astxik"></i>
+                            <p>Команда</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="collections-boxes">
+                <div class="collections-head G-align-center G-justify-between">
+                    <span>18 ПРОМПТОВ</span>
+                    <div class="catalog-item-link G-center">
+                        <i class="icon icon-arrow"></i>
+                    </div>
+                </div>
+                <div class="collections-text">
+                    <h3>
+                        <img loading="lazy" src="assets/images/lin-tert.png" alt="photo" width="18" height="18">
+                        Корпоративные отчёты
+                    </h3>
+                    <p>Промпты для квартальных и годовых отчётов,дайджестов, <strong>презентаций для советов директоров</strong></p>
+                    <div class="collections-wrap G-flex-wrap">
+                        <div class="slidy-turns-name G-center">
+                            <i class="icco icon-astxik"></i>
+                            <p>Сводка</p>
+                        </div>
+                        <div class="slidy-turns-name G-center">
+                            <i class="icco icon-astxik"></i>
+                            <p>Риски</p>
+                        </div>
+                        <div class="slidy-turns-name G-center">
+                            <i class="icco icon-astxik"></i>
+                            <p>Динамика</p>
+                        </div>
+                        <div class="slidy-turns-name G-center">
+                            <i class="icco icon-astxik"></i>
+                            <p>Прогноз</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="collections-boxes">
+                <div class="collections-head G-align-center G-justify-between">
+                    <span>22 ПРОМПТА</span>
+                    <div class="catalog-item-link G-center">
+                        <i class="icon icon-arrow"></i>
+                    </div>
+                </div>
+                <div class="collections-text">
+                    <h3>
+                        <img loading="lazy" src="assets/images/school.png" alt="photo" width="18" height="18">
+                         Образование и курсы
+                    </h3>
+                    <p>Промпты для лекций, вебинаров, учебных модулей и <strong>студенческих проектов</strong></p>
+                    <div class="collections-wrap G-flex-wrap">
+                        <div class="slidy-turns-name G-center">
+                            <i class="icco icon-astxik"></i>
+                            <p>Лекции</p>
+                        </div>
+                        <div class="slidy-turns-name G-center">
+                            <i class="icco icon-astxik"></i>
+                            <p>Диплом</p>
+                        </div>
+                        <div class="slidy-turns-name G-center">
+                            <i class="icco icon-astxik"></i>
+                            <p>Цели и задачи</p>
+                        </div>
+                        <div class="slidy-turns-name G-center">
+                            <i class="icco icon-astxik"></i>
+                            <p>Вебинары</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="collections-boxes collections-none">
+                <div class="collections-head G-align-center G-justify-between">
+                    <span>12 ПРОМПТОВ</span>
+                    <div class="catalog-item-link G-center">
+                        <i class="icon icon-arrow"></i>
+                    </div>
+                </div>
+                <div class="collections-text">
+                    <h3>
+                        <img loading="lazy" src="assets/images/lump.png" alt="photo" width="18" height="18">
+                        Презентация продукта
+                    </h3>
+                    <p>Промпты <strong>для запуска новых фич,</strong> апдейтов для клиентов, сравнения с конкурентами и демо-версий</p>
+                    <div class="collections-wrap G-flex-wrap">
+                        <div class="slidy-turns-name G-center">
+                            <i class="icco icon-astxik"></i>
+                            <p>Сравнение</p>
+                        </div>
+                        <div class="slidy-turns-name G-center">
+                            <i class="icco icon-astxik"></i>
+                            <p>Конкуренты</p>
+                        </div>
+                        <div class="slidy-turns-name G-center">
+                            <i class="icco icon-astxik"></i>
+                            <p>Ключевая выгода</p>
+                        </div>
+                        <div class="slidy-turns-name G-center">
+                            <i class="icco icon-astxik"></i>
+                            <p>Демо</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="collections-boxes collections-none">
+                <div class="collections-head G-align-center G-justify-between">
+                    <span>16 ПРОМПТОВ</span>
+                    <div class="catalog-item-link G-center">
+                        <i class="icon icon-arrow"></i>
+                    </div>
+                </div>
+                <div class="collections-text">
+                    <h3>
+                        <img loading="lazy" src="assets/images/zigzag.png" alt="photo" width="18" height="18">
+                        Маркетинг
+                    </h3>
+                    <p>Промпты для медиапланов, анализа конкурентов, <strong>контент-стратегий и отчётов</strong> по рекламным кампаниям</p>
+                    <div class="collections-wrap G-flex-wrap">
+                        <div class="slidy-turns-name G-center">
+                            <i class="icco icon-astxik"></i>
+                            <p>Рынок</p>
+                        </div>
+                        <div class="slidy-turns-name G-center">
+                            <i class="icco icon-astxik"></i>
+                            <p>Каналы</p>
+                        </div>
+                        <div class="slidy-turns-name G-center">
+                            <i class="icco icon-astxik"></i>
+                            <p>Конкуренты</p>
+                        </div>
+                        <div class="slidy-turns-name G-center">
+                            <i class="icco icon-astxik"></i>
+                            <p>KPI</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="collections-boxes collections-none">
+                <div class="collections-head G-align-center G-justify-between">
+                    <span>9 ПРОМПТОВ</span>
+                    <div class="catalog-item-link G-center">
+                        <i class="icon icon-arrow"></i>
+                    </div>
+                </div>
+                <div class="collections-text">
+                    <h3>
+                        <img loading="lazy" src="assets/images/sput.png" alt="photo" width="18" height="18">
+                       Стартап-дайджесты
+                    </h3>
+                    <p>Промпты для обзоров рынка, трендов, дайджестов для команды и инвесторов. <strong>Держите всех в курсе</strong></p>
+                    <div class="collections-wrap G-flex-wrap">
+                        <div class="slidy-turns-name G-center">
+                            <i class="icco icon-astxik"></i>
+                            <p>Инвестиции</p>
+                        </div>
+                        <div class="slidy-turns-name G-center">
+                            <i class="icco icon-astxik"></i>
+                            <p>Риски</p>
+                        </div>
+                        <div class="slidy-turns-name G-center">
+                            <i class="icco icon-astxik"></i>
+                            <p>Аналитика</p>
+                        </div>
+                        <div class="slidy-turns-name G-center">
+                            <i class="icco icon-astxik"></i>
+                            <p>Технологии</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="collections-boxes collections-none">
+                <div class="collections-head G-align-center G-justify-between">
+                    <span>10 ПРОМПТОВ</span>
+                    <div class="catalog-item-link G-center">
+                        <i class="icon icon-arrow"></i>
+                    </div>
+                </div>
+                <div class="collections-text">
+                    <h3>
+                        <img loading="lazy" src="assets/images/road-map.png" alt="photo" width="18" height="18">
+                        Roadmap
+                    </h3>
+                    <p>Промпты для визуализации этапов разработки, <strong>вех и планов</strong> на квартал или год для продуктовых команд</p>
+                    <div class="collections-wrap G-flex-wrap">
+                        <div class="slidy-turns-name G-center">
+                            <i class="icco icon-astxik"></i>
+                            <p>Команда</p>
+                        </div>
+                        <div class="slidy-turns-name G-center">
+                            <i class="icco icon-astxik"></i>
+                            <p>MVP</p>
+                        </div>
+                        <div class="slidy-turns-name G-center">
+                            <i class="icco icon-astxik"></i>
+                            <p>Интеграции</p>
+                        </div>
+                        <div class="slidy-turns-name G-center">
+                            <i class="icco icon-astxik"></i>
+                            <p>Бэклог</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="collections-boxes collections-none">
+                <div class="collections-head G-align-center G-justify-between">
+                    <span>8 ПРОМПТОВ</span>
+                    <div class="catalog-item-link G-center">
+                        <i class="icon icon-arrow"></i>
+                    </div>
+                </div>
+                <div class="collections-text">
+                    <h3>
+                        <img loading="lazy" src="assets/images/objekts.png" alt="photo" width="18" height="18">
+                        Креативные концепции
+                    </h3>
+                    <p>Промпты для мудбордов, презентаций идей и  <strong>вдохновляющих концептов</strong> для брендов и агентств </p>
+                    <div class="collections-wrap G-flex-wrap">
+                        <div class="slidy-turns-name G-center">
+                            <i class="icco icon-astxik"></i>
+                            <p>Цвета</p>
+                        </div>
+                        <div class="slidy-turns-name G-center">
+                            <i class="icco icon-astxik"></i>
+                            <p>Шрифты</p>
+                        </div>
+                        <div class="slidy-turns-name G-center">
+                            <i class="icco icon-astxik"></i>
+                            <p>Референсы</p>
+                        </div>
+                        <div class="slidy-turns-name G-center">
+                            <i class="icco icon-astxik"></i>
+                            <p>Атмосфера</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="collections-boxes collections-none">
+                <div class="collections-head G-align-center G-justify-between">
+                    <span>11 ПРОМПТОВ</span>
+                    <div class="catalog-item-link G-center">
+                        <i class="icon icon-arrow"></i>
+                    </div>
+                </div>
+                <div class="collections-text">
+                    <h3>
+                        <img loading="lazy" src="assets/images/commun.png" alt="photo" width="18" height="18">
+                        Коммуникации
+                    </h3>
+                    <p>Промпты <strong>для стратегий,</strong> онбординга и общих собраний. Презентации сотрудникам и руководителям</p>
+                    <div class="collections-wrap G-flex-wrap">
+                        <div class="slidy-turns-name G-center">
+                            <i class="icco icon-astxik"></i>
+                            <p>План</p>
+                        </div>
+                        <div class="slidy-turns-name G-center">
+                            <i class="icco icon-astxik"></i>
+                            <p>Правила</p>
+                        </div>
+                        <div class="slidy-turns-name G-center">
+                            <i class="icco icon-astxik"></i>
+                            <p>Миссия</p>
+                        </div>
+                        <div class="slidy-turns-name G-center">
+                            <i class="icco icon-astxik"></i>
+                            <p>Роли</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="collection-more G-center">
+            <i class="icon icon-plus"></i>
+            <span>Показать все</span>
+        </div>
+
+        <div class="collection-rel">
+            <div class="swiper collection-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="collections-boxes">
+                            <div class="collections-head G-align-center G-justify-between">
+                                <span>14 ПРОМПТОВ</span>
+                                <div class="catalog-item-link G-center">
+                                    <i class="icon icon-arrow"></i>
+                                </div>
+                            </div>
+                            <div class="collections-text">
+                                <h3>
+                                    <img loading="lazy" src="assets/images/compareIcon1.png" alt="photo" width="18" height="18">
+                                    Питчи для стартапов
+                                </h3>
+                                <p>Промпты для эффективных презентаций <strong>инвесторам, акселераторам и Demo Day</strong></p>
+                                <div class="collections-wrap G-flex-wrap">
+                                    <div class="slidy-turns-name G-center">
+                                        <i class="icco icon-astxik"></i>
+                                        <p>Финансы</p>
+                                    </div>
+                                    <div class="slidy-turns-name G-center">
+                                        <i class="icco icon-astxik"></i>
+                                        <p>Рынок</p>
+                                    </div>
+                                    <div class="slidy-turns-name G-center">
+                                        <i class="icco icon-astxik"></i>
+                                        <p>Посевной раунд</p>
+                                    </div>
+                                    <div class="slidy-turns-name G-center">
+                                        <i class="icco icon-astxik"></i>
+                                        <p>Команда</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="collections-boxes">
+                            <div class="collections-head G-align-center G-justify-between">
+                                <span>18 ПРОМПТОВ</span>
+                                <div class="catalog-item-link G-center">
+                                    <i class="icon icon-arrow"></i>
+                                </div>
+                            </div>
+                            <div class="collections-text">
+                                <h3>
+                                    <img loading="lazy" src="assets/images/lin-tert.png" alt="photo" width="18" height="18">
+                                    Корпоративные отчёты
+                                </h3>
+                                <p>Промпты для квартальных и годовых отчётов,дайджестов, <strong>презентаций для советов директоров</strong></p>
+                                <div class="collections-wrap G-flex-wrap">
+                                    <div class="slidy-turns-name G-center">
+                                        <i class="icco icon-astxik"></i>
+                                        <p>Сводка</p>
+                                    </div>
+                                    <div class="slidy-turns-name G-center">
+                                        <i class="icco icon-astxik"></i>
+                                        <p>Риски</p>
+                                    </div>
+                                    <div class="slidy-turns-name G-center">
+                                        <i class="icco icon-astxik"></i>
+                                        <p>Динамика</p>
+                                    </div>
+                                    <div class="slidy-turns-name G-center">
+                                        <i class="icco icon-astxik"></i>
+                                        <p>Прогноз</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="collections-boxes">
+                            <div class="collections-head G-align-center G-justify-between">
+                                <span>18 ПРОМПТОВ</span>
+                                <div class="catalog-item-link G-center">
+                                    <i class="icon icon-arrow"></i>
+                                </div>
+                            </div>
+                            <div class="collections-text">
+                                <h3>
+                                    <img loading="lazy" src="assets/images/lin-tert.png" alt="photo" width="18" height="18">
+                                    Корпоративные отчёты
+                                </h3>
+                                <p>Промпты для квартальных и годовых отчётов,дайджестов, <strong>презентаций для советов директоров</strong></p>
+                                <div class="collections-wrap G-flex-wrap">
+                                    <div class="slidy-turns-name G-center">
+                                        <i class="icco icon-astxik"></i>
+                                        <p>Сводка</p>
+                                    </div>
+                                    <div class="slidy-turns-name G-center">
+                                        <i class="icco icon-astxik"></i>
+                                        <p>Риски</p>
+                                    </div>
+                                    <div class="slidy-turns-name G-center">
+                                        <i class="icco icon-astxik"></i>
+                                        <p>Динамика</p>
+                                    </div>
+                                    <div class="slidy-turns-name G-center">
+                                        <i class="icco icon-astxik"></i>
+                                        <p>Прогноз</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="collections-boxes">
+                            <div class="collections-head G-align-center G-justify-between">
+                                <span>18 ПРОМПТОВ</span>
+                                <div class="catalog-item-link G-center">
+                                    <i class="icon icon-arrow"></i>
+                                </div>
+                            </div>
+                            <div class="collections-text">
+                                <h3>
+                                    <img loading="lazy" src="assets/images/lin-tert.png" alt="photo" width="18" height="18">
+                                    Корпоративные отчёты
+                                </h3>
+                                <p>Промпты для квартальных и годовых отчётов,дайджестов, <strong>презентаций для советов директоров</strong></p>
+                                <div class="collections-wrap G-flex-wrap">
+                                    <div class="slidy-turns-name G-center">
+                                        <i class="icco icon-astxik"></i>
+                                        <p>Сводка</p>
+                                    </div>
+                                    <div class="slidy-turns-name G-center">
+                                        <i class="icco icon-astxik"></i>
+                                        <p>Риски</p>
+                                    </div>
+                                    <div class="slidy-turns-name G-center">
+                                        <i class="icco icon-astxik"></i>
+                                        <p>Динамика</p>
+                                    </div>
+                                    <div class="slidy-turns-name G-center">
+                                        <i class="icco icon-astxik"></i>
+                                        <p>Прогноз</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="collections-boxes">
+                            <div class="collections-head G-align-center G-justify-between">
+                                <span>18 ПРОМПТОВ</span>
+                                <div class="catalog-item-link G-center">
+                                    <i class="icon icon-arrow"></i>
+                                </div>
+                            </div>
+                            <div class="collections-text">
+                                <h3>
+                                    <img loading="lazy" src="assets/images/lin-tert.png" alt="photo" width="18" height="18">
+                                    Корпоративные отчёты
+                                </h3>
+                                <p>Промпты для квартальных и годовых отчётов,дайджестов, <strong>презентаций для советов директоров</strong></p>
+                                <div class="collections-wrap G-flex-wrap">
+                                    <div class="slidy-turns-name G-center">
+                                        <i class="icco icon-astxik"></i>
+                                        <p>Сводка</p>
+                                    </div>
+                                    <div class="slidy-turns-name G-center">
+                                        <i class="icco icon-astxik"></i>
+                                        <p>Риски</p>
+                                    </div>
+                                    <div class="slidy-turns-name G-center">
+                                        <i class="icco icon-astxik"></i>
+                                        <p>Динамика</p>
+                                    </div>
+                                    <div class="slidy-turns-name G-center">
+                                        <i class="icco icon-astxik"></i>
+                                        <p>Прогноз</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="collections-boxes">
+                            <div class="collections-head G-align-center G-justify-between">
+                                <span>18 ПРОМПТОВ</span>
+                                <div class="catalog-item-link G-center">
+                                    <i class="icon icon-arrow"></i>
+                                </div>
+                            </div>
+                            <div class="collections-text">
+                                <h3>
+                                    <img loading="lazy" src="assets/images/lin-tert.png" alt="photo" width="18" height="18">
+                                    Корпоративные отчёты
+                                </h3>
+                                <p>Промпты для квартальных и годовых отчётов,дайджестов, <strong>презентаций для советов директоров</strong></p>
+                                <div class="collections-wrap G-flex-wrap">
+                                    <div class="slidy-turns-name G-center">
+                                        <i class="icco icon-astxik"></i>
+                                        <p>Сводка</p>
+                                    </div>
+                                    <div class="slidy-turns-name G-center">
+                                        <i class="icco icon-astxik"></i>
+                                        <p>Риски</p>
+                                    </div>
+                                    <div class="slidy-turns-name G-center">
+                                        <i class="icco icon-astxik"></i>
+                                        <p>Динамика</p>
+                                    </div>
+                                    <div class="slidy-turns-name G-center">
+                                        <i class="icco icon-astxik"></i>
+                                        <p>Прогноз</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="collections-boxes">
+                            <div class="collections-head G-align-center G-justify-between">
+                                <span>18 ПРОМПТОВ</span>
+                                <div class="catalog-item-link G-center">
+                                    <i class="icon icon-arrow"></i>
+                                </div>
+                            </div>
+                            <div class="collections-text">
+                                <h3>
+                                    <img loading="lazy" src="assets/images/lin-tert.png" alt="photo" width="18" height="18">
+                                    Корпоративные отчёты
+                                </h3>
+                                <p>Промпты для квартальных и годовых отчётов,дайджестов, <strong>презентаций для советов директоров</strong></p>
+                                <div class="collections-wrap G-flex-wrap">
+                                    <div class="slidy-turns-name G-center">
+                                        <i class="icco icon-astxik"></i>
+                                        <p>Сводка</p>
+                                    </div>
+                                    <div class="slidy-turns-name G-center">
+                                        <i class="icco icon-astxik"></i>
+                                        <p>Риски</p>
+                                    </div>
+                                    <div class="slidy-turns-name G-center">
+                                        <i class="icco icon-astxik"></i>
+                                        <p>Динамика</p>
+                                    </div>
+                                    <div class="slidy-turns-name G-center">
+                                        <i class="icco icon-astxik"></i>
+                                        <p>Прогноз</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="collection-pagination swiper-pagination"></div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="catalog-main-section prompts-catalog-main">
+    <div class="container">
+        <div class="catalog-search-block block-cnt G-align-center">
+            <label>
+                <input
+                        type="text"
+                        name="search"
+                        placeholder="Поиск по названию, категории..."
+                        autocomplete="off"
+                />
+                <i class="icon icon-search"></i>
+            </label>
+            <button class="catalog-btn btn-start G-align-center">
+                <span>Найти промпт</span>
+            </button>
+        </div>
+        <div class="catalog-tabs">
+            <button class="active">
+                Все шаблоны
+                <span>87</span>
+            </button>
+            <button>
+                Категория
+                <span>78</span>
+            </button>
+            <button>
+                Категория
+                <span>78</span>
+            </button>
+            <button>
+                Категория
+                <span>78</span>
+            </button>
+            <button>
+                Категория
+                <span>78</span>
+            </button>
+            <button>
+                Категория
+                <span>78</span>
+            </button>
+            <button>
+                Категория
+                <span>78</span>
+            </button>
+            <button>
+                Категория
+                <span>78</span>
+            </button>
+            <button>
+                Категория
+                <span>78</span>
+            </button>
+
+        </div>
+        <div class="catalog-main-cnt">
+            <div class="catalog-filters-main">
+                <div class="catalog-filters-wrapper">
+                    <div class="catalog-filters-items">
+                        <div class="c-filter-item">
+                            <p class="c-filter-title">Тип презентации</p>
+
+                            <div class="catalog-check-col G-flex-column">
+                                <label class="checkbox-chek">
+                                    <small>Питч</small>
+                                    <input type="checkbox">
+                                    <span class="checkmark">
+                                        <i class="icon icon-check"></i>
+
+                                    </span>
+                                </label>
+                                <label class="checkbox-chek">
+                                    <small>Отчёт</small>
+                                    <input type="checkbox">
+                                    <span class="checkmark">
+                                        <i class="icon icon-check"></i>
+
+                                    </span>
+                                </label>
+                                <label class="checkbox-chek">
+                                    <small>Обучение</small>
+                                    <input type="checkbox">
+                                    <span class="checkmark">
+                                        <i class="icon icon-check"></i>
+
+                                    </span>
+                                </label>
+                                <label class="checkbox-chek">
+                                    <small>Презентация продукта</small>
+                                    <input type="checkbox">
+                                    <span class="checkmark">
+                                        <i class="icon icon-check"></i>
+
+                                    </span>
+                                </label>
+                                <label class="checkbox-chek">
+                                    <small>Дорожная карта</small>
+                                    <input type="checkbox">
+                                    <span class="checkmark">
+                                        <i class="icon icon-check"></i>
+                                    </span>
+                                </label>
+                            </div>
+
+                        </div>
+                        <div class="catalog-filters-line"></div>
+
+                        <div class="c-filter-item">
+                            <p class="c-filter-title">Аудитория</p>
+
+                            <div class="catalog-check-col G-flex-column">
+                                <label class="checkbox-chek">
+                                    <small>Стартапы</small>
+                                    <input type="checkbox">
+                                    <span class="checkmark">
+                                        <i class="icon icon-check"></i>
+
+                                    </span>
+                                </label>
+                                <label class="checkbox-chek">
+                                    <small>Корпорации</small>
+                                    <input type="checkbox">
+                                    <span class="checkmark">
+                                        <i class="icon icon-check"></i>
+
+                                    </span>
+                                </label>
+                                <label class="checkbox-chek">
+                                    <small>Маркетологи</small>
+                                    <input type="checkbox">
+                                    <span class="checkmark">
+                                        <i class="icon icon-check"></i>
+
+                                    </span>
+                                </label>
+                                <label class="checkbox-chek">
+                                    <small>Преподаватели</small>
+                                    <input type="checkbox">
+                                    <span class="checkmark">
+                                        <i class="icon icon-check"></i>
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="catalog-filters-line"></div>
+
+                        <div class="c-filter-item">
+                            <p class="c-filter-title">Индустрия</p>
+
+                            <div class="catalog-check-col G-flex-column">
+                                <label class="checkbox-chek">
+                                    <small>IT и софт</small>
+                                    <input type="checkbox">
+                                    <span class="checkmark">
+                                        <i class="icon icon-check"></i>
+
+                                    </span>
+                                </label>
+                                <label class="checkbox-chek">
+                                    <small>Финансы и инвестиции</small>
+                                    <input type="checkbox">
+                                    <span class="checkmark">
+                                        <i class="icon icon-check"></i>
+
+                                    </span>
+                                </label>
+                                <label class="checkbox-chek">
+                                    <small>Маркетинг и реклама</small>
+                                    <input type="checkbox">
+                                    <span class="checkmark">
+                                        <i class="icon icon-check"></i>
+
+                                    </span>
+                                </label>
+                                <label class="checkbox-chek">
+                                    <small>Образование и наука</small>
+                                    <input type="checkbox">
+                                    <span class="checkmark">
+                                        <i class="icon icon-check"></i>
+                                    </span>
+                                </label>
+                                <label class="checkbox-chek">
+                                    <small>Медицина</small>
+                                    <input type="checkbox">
+                                    <span class="checkmark">
+                                        <i class="icon icon-check"></i>
+                                    </span>
+                                </label>
+                                <label class="checkbox-chek">
+                                    <small>Креативные индустрии</small>
+                                    <input type="checkbox">
+                                    <span class="checkmark">
+                                        <i class="icon icon-check"></i>
+                                    </span>
+                                </label>
+                            </div>
+
+                        </div>
+                        <div class="catalog-filters-line"></div>
+
+
+                        <div class="c-filter-item">
+                            <p class="c-filter-title">Количество слайдов</p>
+
+                            <div class="catalog-check-col G-flex-column">
+
+                                <label class="checkbox-chek">
+                                    <small>5-10 слайдов</small>
+                                    <input type="radio" name="radio">
+                                    <span class="radiobtn">
+                                        <i class="icon icon-check"></i>
+                                    </span>
+                                </label>
+                                <label class="checkbox-chek">
+                                    <small>10-20 слайдов</small>
+                                    <input type="radio" name="radio">
+                                    <span class="radiobtn">
+                                        <i class="icon icon-check"></i>
+                                    </span>
+                                </label>
+
+                                <label class="checkbox-chek">
+                                    <small>20+ слайдов</small>
+                                    <input type="radio" name="radio">
+                                    <span class="radiobtn">
+                                        <i class="icon icon-check"></i>
+                                    </span>
+                                </label>
+
+                            </div>
+
+                        </div>
+                        <div class="catalog-filters-line"></div>
+
+
+                        <div class="c-filter-item">
+                            <p class="c-filter-title">Тон</p>
+
+                            <div class="catalog-check-col G-flex-column">
+                                <label class="checkbox-chek">
+                                    <small>Деловой</small>
+                                    <input type="checkbox">
+                                    <span class="checkmark">
+                                        <i class="icon icon-check"></i>
+                                    </span>
+                                </label>
+                                <label class="checkbox-chek">
+                                    <small>Дружелюбный</small>
+                                    <input type="checkbox">
+                                    <span class="checkmark">
+                                        <i class="icon icon-check"></i>
+                                    </span>
+                                </label>
+                                <label class="checkbox-chek">
+                                    <small>Вдохновляющий</small>
+                                    <input type="checkbox">
+                                    <span class="checkmark">
+                                        <i class="icon icon-check"></i>
+                                    </span>
+                                </label>
+                                <label class="checkbox-chek">
+                                    <small>Нейтральный</small>
+                                    <input type="checkbox">
+                                    <span class="checkmark">
+                                        <i class="icon icon-check"></i>
+                                    </span>
+                                </label>
+                            </div>
+
+
+                        </div>
+                        <div class="catalog-filters-line"></div>
+
+
+                        <div class="c-filter-item">
+                            <p class="c-filter-title">Уровень детализации</p>
+
+                            <div class="catalog-check-col G-flex-column">
+
+                                <label class="checkbox-chek">
+                                    <small>Краткий</small>
+                                    <input type="radio" name="level">
+                                    <span class="radiobtn">
+                                        <i class="icon icon-check"></i>
+                                    </span>
+                                </label>
+                                <label class="checkbox-chek">
+                                    <small>Стандартный</small>
+                                    <input type="radio" name="level">
+                                    <span class="radiobtn">
+                                        <i class="icon icon-check"></i>
+                                    </span>
+                                </label>
+
+                                <label class="checkbox-chek">
+                                    <small>Подробный</small>
+                                    <input type="radio" name="level">
+                                    <span class="radiobtn">
+                                        <i class="icon icon-check"></i>
+                                    </span>
+                                </label>
+                                <label class="checkbox-chek">
+                                    <small>С развёрнутыми <br> данными / графиками</small>
+                                    <input type="radio" name="level">
+                                    <span class="radiobtn">
+                                        <i class="icon icon-check"></i>
+                                    </span>
+                                </label>
+
+                            </div>
+
+                        </div>
+                        <div class="catalog-filters-line"></div>
+
+                        <div class="c-filter-item">
+                            <p class="c-filter-title">Язык</p>
+
+                            <div class="catalog-check-col G-flex-column">
+
+                                <label class="checkbox-chek">
+                                    <small>Русский</small>
+                                    <input type="radio" name="language">
+                                    <span class="radiobtn">
+                                        <i class="icon icon-check"></i>
+                                    </span>
+                                </label>
+                                <label class="checkbox-chek">
+                                    <small>Английский</small>
+                                    <input type="radio" name="language">
+                                    <span class="radiobtn">
+                                        <i class="icon icon-check"></i>
+                                    </span>
+                                </label>
+
+                            </div>
+
+                        </div>
+
+                        <button class="reset-all">Сбросить всё</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="catalog-items-wrapper">
+                <div class="catalog-items-header G-align-center">
+                    <div class="templates-count G-align-center">
+                        <span>87</span>
+                        <p>шаблонов</p>
+                    </div>
+                    <div class="c-categories-select">
+                        <div class="c-select-header G-align-center">
+                            <p>Популярные</p>
+                            <i class="icon icon-arrow-down"></i>
+                        </div>
+                        <ul class="c-select-options G-flex-column">
+                            <li class="active">
+                                <span>Популярные</span>
+                                <i class="icon icon-check"></i>
+                            </li>
+
+                            <li>
+                                <span>Новые</span>
+                                <i class="icon icon-check"></i>
+                            </li>
+
+                            <li>
+                                <span>Часто используемые</span>
+                                <i class="icon icon-check"></i>
+                            </li>
+
+                            <li>
+                                <span>Высокий рейтинг</span>
+                                <i class="icon icon-check"></i>
+                            </li>
+
+                            <li>
+                                <span>Самые быстрые</span>
+                                <i class="icon icon-check"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="c-selected-categories">
+                    <button>
+                        <span>питч</span>
+                        <i class="icon icon-close2"></i>
+                    </button>
+                    <button>
+                        <span>презентация продукта</span>
+                        <i class="icon icon-close2"></i>
+                    </button>
+                    <button>
+                        <span>маркетологи</span>
+                        <i class="icon icon-close2"></i>
+                    </button>
+                    <button>
+                        <span>финансы и инвестиции</span>
+                        <i class="icon icon-close2"></i>
+                    </button>
+                    <button>
+                        <span>10-20 слайдов</span>
+                        <i class="icon icon-close2"></i>
+                    </button>
+                    <button>
+                        <span>дружелюбный</span>
+                        <i class="icon icon-close2"></i>
+                    </button>
+                    <button>
+                        <span>стандартный</span>
+                        <i class="icon icon-close2"></i>
+                    </button>
+                    <button>
+                        <span>русский</span>
+                        <i class="icon icon-close2"></i>
+                    </button>
+
+
+                </div>
+
+                <div class="prompts-catalog-wrap G-flex-wrap">
+                    <div class="prompts-catalog-box catalog-item">
+                        <div class="G-align-center G-justify-between">
+                            <span class="prompts-cat-btn G-center">
+                              Категория
+                            </span>
+                            <span class="for-copy G-center">
+                                <i class="icon icon-copy"></i>
+                            </span>
+                        </div>
+                        <div class="prompt-name-title">
+                            <h4>Название промпта</h4>
+                            <div class="prompt-name-text">
+                                <p>
+                                    Здесь будет короткое превью текста промпта на 2–3 строки, чтобы пользователь сразу понял, что
+                                </p>
+                            </div>
+                            <div class="style-mood-wrap G-flex-wrap">
+                                <div class="style-mood-name G-center">
+                                    <i class="icon icon-wheel"></i>
+                                    <span>Тег</span>
+                                </div>
+                                <div class="style-mood-name G-center">
+                                    <i class="icon icon-wheel"></i>
+                                    <span>Тег</span>
+                                </div>
+                                <div class="style-mood-name G-center">
+                                    <i class="icon icon-wheel"></i>
+                                    <span>Тег</span>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="read-more">
+                            Подробнее
+                        </a>
+                    </div>
+                    <div class="prompts-catalog-box catalog-item">
+                        <div class="G-align-center G-justify-between">
+                            <span class="prompts-cat-btn G-center">
+                              Категория
+                            </span>
+                            <span class="for-copy G-center">
+                                <i class="icon icon-copy"></i>
+                            </span>
+                        </div>
+                        <div class="prompt-name-title">
+                            <h4>Название промпта</h4>
+                            <div class="prompt-name-text">
+                                <p>
+                                    Здесь будет короткое превью текста промпта на 2–3 строки, чтобы пользователь сразу понял, что
+                                </p>
+                            </div>
+                            <div class="style-mood-wrap G-flex-wrap">
+                                <div class="style-mood-name G-center">
+                                    <i class="icon icon-wheel"></i>
+                                    <span>Тег</span>
+                                </div>
+                                <div class="style-mood-name G-center">
+                                    <i class="icon icon-wheel"></i>
+                                    <span>Тег</span>
+                                </div>
+                                <div class="style-mood-name G-center">
+                                    <i class="icon icon-wheel"></i>
+                                    <span>Тег</span>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="read-more">
+                            Подробнее
+                        </a>
+                    </div>
+                    <div class="prompts-catalog-box catalog-item">
+                        <div class="G-align-center G-justify-between">
+                            <span class="prompts-cat-btn G-center">
+                              Категория
+                            </span>
+                            <span class="for-copy G-center">
+                                <i class="icon icon-copy"></i>
+                            </span>
+                        </div>
+                        <div class="prompt-name-title">
+                            <h4>Название промпта</h4>
+                            <div class="prompt-name-text">
+                                <p>
+                                    Здесь будет короткое превью текста промпта на 2–3 строки, чтобы пользователь сразу понял, что
+                                </p>
+                            </div>
+                            <div class="style-mood-wrap G-flex-wrap">
+                                <div class="style-mood-name G-center">
+                                    <i class="icon icon-wheel"></i>
+                                    <span>Тег</span>
+                                </div>
+                                <div class="style-mood-name G-center">
+                                    <i class="icon icon-wheel"></i>
+                                    <span>Тег</span>
+                                </div>
+                                <div class="style-mood-name G-center">
+                                    <i class="icon icon-wheel"></i>
+                                    <span>Тег</span>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="read-more">
+                            Подробнее
+                        </a>
+                    </div>
+                    <div class="prompts-catalog-box catalog-item">
+                        <div class="G-align-center G-justify-between">
+                            <span class="prompts-cat-btn G-center">
+                              Категория
+                            </span>
+                            <span class="for-copy G-center">
+                                <i class="icon icon-copy"></i>
+                            </span>
+                        </div>
+                        <div class="prompt-name-title">
+                            <h4>Название промпта</h4>
+                            <div class="prompt-name-text">
+                                <p>
+                                    Здесь будет короткое превью текста промпта на 2–3 строки, чтобы пользователь сразу понял, что
+                                </p>
+                            </div>
+                            <div class="style-mood-wrap G-flex-wrap">
+                                <div class="style-mood-name G-center">
+                                    <i class="icon icon-wheel"></i>
+                                    <span>Тег</span>
+                                </div>
+                                <div class="style-mood-name G-center">
+                                    <i class="icon icon-wheel"></i>
+                                    <span>Тег</span>
+                                </div>
+                                <div class="style-mood-name G-center">
+                                    <i class="icon icon-wheel"></i>
+                                    <span>Тег</span>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="read-more">
+                            Подробнее
+                        </a>
+                    </div>
+                    <div class="prompts-catalog-box catalog-item">
+                        <div class="G-align-center G-justify-between">
+                            <span class="prompts-cat-btn G-center">
+                              Категория
+                            </span>
+                            <span class="for-copy G-center">
+                                <i class="icon icon-copy"></i>
+                            </span>
+                        </div>
+                        <div class="prompt-name-title">
+                            <h4>Название промпта</h4>
+                            <div class="prompt-name-text">
+                                <p>
+                                    Здесь будет короткое превью текста промпта на 2–3 строки, чтобы пользователь сразу понял, что
+                                </p>
+                            </div>
+                            <div class="style-mood-wrap G-flex-wrap">
+                                <div class="style-mood-name G-center">
+                                    <i class="icon icon-wheel"></i>
+                                    <span>Тег</span>
+                                </div>
+                                <div class="style-mood-name G-center">
+                                    <i class="icon icon-wheel"></i>
+                                    <span>Тег</span>
+                                </div>
+                                <div class="style-mood-name G-center">
+                                    <i class="icon icon-wheel"></i>
+                                    <span>Тег</span>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="read-more">
+                            Подробнее
+                        </a>
+                    </div>
+                    <div class="prompts-catalog-box catalog-item">
+                        <div class="G-align-center G-justify-between">
+                            <span class="prompts-cat-btn G-center">
+                              Категория
+                            </span>
+                            <span class="for-copy G-center">
+                                <i class="icon icon-copy"></i>
+                            </span>
+                        </div>
+                        <div class="prompt-name-title">
+                            <h4>Название промпта</h4>
+                            <div class="prompt-name-text">
+                                <p>
+                                    Здесь будет короткое превью текста промпта на 2–3 строки, чтобы пользователь сразу понял, что
+                                </p>
+                            </div>
+                            <div class="style-mood-wrap G-flex-wrap">
+                                <div class="style-mood-name G-center">
+                                    <i class="icon icon-wheel"></i>
+                                    <span>Тег</span>
+                                </div>
+                                <div class="style-mood-name G-center">
+                                    <i class="icon icon-wheel"></i>
+                                    <span>Тег</span>
+                                </div>
+                                <div class="style-mood-name G-center">
+                                    <i class="icon icon-wheel"></i>
+                                    <span>Тег</span>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="read-more">
+                            Подробнее
+                        </a>
+                    </div>
+                </div>
+                <div class="G-center">
+                    <a href="#" class="see-more">Показать ещё</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="template-description-modal">
+    <div class="template-modal-wrapper prompt-name-add">
+        <i class="icon icon-close"></i>
+
+        <div class="prompt-name-padd">
+            <span class="prompts-cat-btn G-center">
+              Категория
+            </span>
+            <h3>Название промпта</h3>
+
+            <div class="prompt-text-boxes G-flex-column">
+                <div class="prompt-text-cnt">
+                    <span class="prompt-text-name">ТЕКСТ ПРОМПТА</span>
+                    <div class="paragraphs-full">
+                        <p>
+                            Здесь будет полный текст промпта на несколько абзацев. Текст содержит инструкцию для нейросети с указанием темы, структуры, целевой аудитории, тона и других параметров. В тексте размечены переменные в фигурных скобках, которые пользователь заменяет на свои значения перед отправкой.
+                        </p>
+                        <div class="paragraphs-full-wrap G-flex-wrap">
+                            <div class="life-examples-text">
+                                <span>ТЕМА</span>
+                                <ul>
+                                    <li>— Тема промпта</li>
+                                </ul>
+                            </div>
+                            <div class="life-examples-text">
+                                <span>АУДИТОРИЯ</span>
+                                <ul>
+                                    <li>— Маркетологи</li>
+                                </ul>
+                            </div>
+                            <div class="life-examples-text">
+                                <span>ИНДУСТРИЯ</span>
+                                <ul>
+                                    <li>— Финансы и инвестиции</li>
+                                </ul>
+                            </div>
+                            <div class="life-examples-text">
+                                <span>КОЛ-ВО СЛАЙДОВ</span>
+                                <ul>
+                                    <li>— 10–20 слайдов</li>
+                                </ul>
+                            </div>
+                            <div class="life-examples-text">
+                                <span>ТОН</span>
+                                <ul>
+                                    <li>— Дружелюбный</li>
+                                </ul>
+                            </div>
+                            <div class="life-examples-text">
+                                <span>ДЕТАЛИЗАЦИЯ</span>
+                                <ul>
+                                    <li>— Стандартная</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="style-mood-wrap G-flex-wrap">
+                        <div class="style-mood-name G-center">
+                            <i class="icon icon-wheel"></i>
+                            <span>Тег</span>
+                        </div>
+                        <div class="style-mood-name G-center">
+                            <i class="icon icon-wheel"></i>
+                            <span>Тег</span>
+                        </div>
+                        <div class="style-mood-name G-center">
+                            <i class="icon icon-wheel"></i>
+                            <span>Тег</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="prompt-text-bot">
+                    <span class="prompt-text-name">РЕЗУЛЬТАТ НА ВЫХОДЕ</span>
+                    <p>
+                        Здесь будет описание ожидаемого результата: какая структура слайдов будет сгенерирована, какой объём текста, каковы особенности оформления.
+                    </p>
+                </div>
+                <div class="prompt-text-bot">
+                    <span class="prompt-text-name">ПЕРЕМЕННЫЕ ДЛЯ ЗАМЕНЫ</span>
+                    <div class="variables-rep-col G-flex-column">
+                        <div class="variables-rep G-align-center">
+                            <div class="variables-name">ТЕМА</div>
+                            <p>Здесь будет описание переменной и пример значения</p>
+                        </div>
+                        <div class="variables-rep G-align-center">
+                            <div class="variables-name">АУДИТОРИЯ</div>
+                            <p>Здесь будет описание переменной и пример значения</p>
+                        </div>
+                        <div class="variables-rep G-align-center">
+                            <div class="variables-name">КОЛ-ВО СЛАЙДОВ</div>
+                            <p>Здесь будет описание переменной и пример значения</p>
+                        </div>
+                        <div class="variables-rep G-align-center">
+                            <div class="variables-name">ТОН</div>
+                            <p>Здесь будет описание переменной и пример значения</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="prompt-text-bot">
+                    <span class="prompt-text-name">СЦЕНАРИИ ИСПОЛЬЗОВАНИЯ</span>
+                    <p>
+                        Здесь будет описание ситуаций, в которых этот промпт даёт лучший результат, и для каких сценариев он не подходит.
+                    </p>
+                </div>
+            </div>
+            <div class="prompt-text-btn G-center">
+                <a href="#" class="read-more">
+                    Копировать промпт
+                </a>
+                <button class="btn-start G-align-center">
+                    <i class="icon icon-stars"></i>
+                    <span>Открыть в Slidy</span>
+                </button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<section class="suitable-prompt">
+
+    <div class="linking-card-info">
+        <div class="container">
+            <div class="section-titles fade-bottom G-column-center show">
+                <div class="section-tag G-align-center">
+                    <i class="icon icon-star"></i>
+                    <span>У нас есть решение</span>
+                </div>
+                <h2 class="section-big-title">
+                    Не нашли
+                    <span class="text-blue"> подходящий промпт? </span>
+                </h2>
+                <p class="section-sub-title">
+                    Если готового промпта под вашу задачу нет в библиотеке — не проблема. <span>Вот три способа получить нужный запрос</span>
+                </p>
+
+                <div class="linking-card-names">
+                    <ul>
+                        <li><img loading="lazy" src="assets/images/heads.png" alt="photo" width="18" height="18"> Предложить свой промпт</li>
+                        <li><img loading="lazy" src="assets/images/pens-pep.png" alt="photo" width="18" height="18"> Заказать промпт под задачу</li>
+                        <li><img loading="lazy" src="assets/images/objekts.png" alt="photo" width="18" height="18"> Написать самому в редакторе</li>
+                    </ul>
+                </div>
+
+                <div class="suitable-prompt-btn G-center">
+                    <a href="#" class="read-more">
+                        Предложить промпт
+                    </a>
+                    <button class="btn-black trust-btn G-align-center">
+                        <i class="icon icon-arrow"></i>
+                        <span>Открыть редактор</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="linking-card-bg G-flex">
+        <img
+                loading="lazy"
+                src="assets/images/cta-prompts.webp"
+                data-light="assets/images/linking-dark-mob.png"
+                data-dark="assets/images/cta-prompts.webp"
+                alt="prompts"
+                class="img-desktop"
+
+        />
+
+        <img
+                loading="lazy"
+                src="assets/images/cta-prompts-mob.png"
+                data-light="assets/images/cta-prompts-mob-lig.png"
+                data-dark="assets/images/cta-prompts-mob.png"
+                alt="prompts"
+                class="img-mobile"
+
+
+        />
+    </div>
+
+</section>
+
+
+<section id="faq" class="faq-section power-faq">
+
+    <div class="container">
+        <div class="section-titles reviews-titles fade-bottom G-column-center">
+            <div class="section-tag G-align-center">
+                <i class="icon icon-star"></i>
+                <span>FAQ</span>
+            </div>
+            <h6 class="section-title">
+                Часто задаваемые вопросы
+            </h6>
+            <p class="section-sub-title">
+                Не тратьте время на поиск — мы собрали
+                <span class="text-wrap"
+                ><strong>всё самое важное</strong> в одном месте</span
+                >
+            </p>
+        </div>
+
+        <div id="accordion" class="faq-columns block-cnt fade-bottom">
+            <div class="faq-column G-flex-column">
+                <div class="often-asks-item animate-item">
+                    <div class="asks-item-header link G-justify-between">
+                        <p>
+                            Как работают промпты в Slidy?
+                        </p>
+                        <div class="asks-list-icon G-center">
+                            <i class="icon icon-plus"></i>
+                        </div>
+                    </div>
+                    <div class="asks-list-sub submenu">
+                        Да. Slidy экспортирует в полноценный .pptx. Открываете в PowerPoint и редактируете всё как обычно.
+                    </div>
+                </div>
+
+                <div class="often-asks-item animate-item">
+                    <div class="asks-item-header link G-justify-between">
+                        <p>
+                            Можно ли адаптировать промпт под свою задачу?
+                        </p>
+                        <div class="asks-list-icon G-center">
+                            <i class="icon icon-plus"></i>
+                        </div>
+                    </div>
+                    <div class="asks-list-sub submenu">
+                        Нет. Slidy сохраняет шрифты, цвета и позиции элементов. В PowerPoint всё выглядит так же, как в редакторе.
+                    </div>
+                </div>
+
+                <div class="often-asks-item animate-item">
+                    <div class="asks-item-header link G-justify-between">
+                        <p>Как часто обновляется библиотека промптов?</p>
+                        <div class="asks-list-icon G-center">
+                            <i class="icon icon-plus"></i>
+                        </div>
+                    </div>
+                    <div class="asks-list-sub submenu">
+                        Да. Анимации экспортируются и остаются редактируемыми. Можете менять их или добавлять новые в PowerPoint.
+                    </div>
+                </div>
+            </div>
+            <div class="faq-column G-flex-column">
+                <div class="often-asks-item animate-item">
+                    <div class="asks-item-header link G-justify-between">
+                        <p>Чем промпт отличается от шаблона?</p>
+                        <div class="asks-list-icon G-center">
+                            <i class="icon icon-plus"></i>
+                        </div>
+                    </div>
+                    <div class="asks-list-sub submenu">
+                        Без ограничений. Slidy не режет объём — экспортируйте презентации любого размера.
+                    </div>
+                </div>
+
+                <div class="often-asks-item animate-item">
+                    <div class="asks-item-header link G-justify-between">
+                        <p>Сохраняются ли мои промпты?</p>
+                        <div class="asks-list-icon G-center">
+                            <i class="icon icon-plus"></i>
+                        </div>
+                    </div>
+                    <div class="asks-list-sub submenu">
+                        Да. AI анализирует ваш текст и автоматически подбирает релевантные изображения. Вы всегда можете заменить их на свои.
+                    </div>
+                </div>
+
+                <div class="often-asks-item animate-item">
+                    <div class="asks-item-header link G-justify-between">
+                        <p>Что такое переменные в промптах?</p>
+                        <div class="asks-list-icon G-center">
+                            <i class="icon icon-plus"></i>
+                        </div>
+                    </div>
+                    <div class="asks-list-sub submenu">
+                        Slidy отлично работает с русским и английским языками. AI понимает оба и генерирует презентации на любом из них без потери качества.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<footer class="footer">
+    <div class="loss-quality-elips G-flex">
+        <img loading="lazy" src="./assets/images/elip-dark.png" alt="photo">
+    </div>
+    <div class="container">
+        <div class="footer-body fade-bottom">
+            <div class="footer-bottom G-align-start">
+                <div class="footer-logo-wrapper G-align-center">
+                    <a href="index.html" class="footer-logo G-flex">
+                        <img
+                                loading="lazy"
+                                src="assets/images/footerlogo.svg"
+                                data-light="assets/images/footerlogo.svg"
+                                data-dark="assets/images/logo-dark.svg"
+                                alt="logo"
+                                width="105"
+                                height="29"
+                        />
+                    </a>
+
+                    <div
+                            class="language-select-wrapper footer-select-wrapper mobile-block"
+                    >
+                        <div class="language-select-header G-align-center">
+                            <div class="l-select-flag G-flex">
+                                <img
+                                        loading="lazy"
+                                        src="assets/images/flag1.svg"
+                                        alt="photo"
+                                        width="28"
+                                        height="20"
+                                />
+                            </div>
+                            <p>Русский</p>
+                            <i class="icon icon-arrow-down"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <nav class="footer-nav G-align-start">
+                    <ul>
+                        <p>ПРОДУКТ</p>
+                        <li>
+                            <a href="#">Цены</a>
+                        </li>
+                        <li>
+                            <a href="#">Блог</a>
+                        </li>
+                        <li>
+                            <a href="#">Промты</a>
+                        </li>
+                        <li>
+                            <a href="catalog.html">Каталог презентаций</a>
+                        </li>
+                        <li>
+                            <a href="#">Шаблоны</a>
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <p>КОМПАНИЯ</p>
+                        <li>
+                            <a href="about.html">О нас</a>
+                        </li>
+                        <li>
+                            <a href="#">Команда</a>
+                        </li>
+                        <li>
+                            <a href="#">Помощь</a>
+                        </li>
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <p>РЕШЕНИЯ</p>
+                        <li>
+                            <a href="#">Стартапам</a>
+                        </li>
+                        <li>
+                            <a href="#">Маркетологам</a>
+                        </li>
+                        <li>
+                            <a href="#">Отделам продаж</a>
+                        </li>
+                        <li>
+                            <a href="#">Студентам</a>
+                        </li>
+                        <li>
+                            <a href="#">Преподавателям</a>
+                        </li>
+                        <li>
+                            <a href="#">Консультантам</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <p>ПРАВОВАЯ ИНФОРМАЦИЯ</p>
+                        <li>
+                            <a href="#">Юридическая информация</a>
+                        </li>
+                        <li>
+                            <a href="#">Правила использования</a>
+                        </li>
+                        <li>
+                            <a href="#">Политика cookie</a>
+                        </li>
+                        <li>
+                            <a href="#">Соглашение об обработке данных</a>
+                        </li>
+                        <li>
+                            <a href="#">Политика конфиденциальности</a>
+                        </li>
+                        <li>
+                            <a href="#">Условия использования</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-top G-flex">
+                <div class="footer-column G-flex-column">
+                    <p class="footer-text">
+                        По всем вопросам, связанным с работой сервиса, вы можете
+                        связаться с нами по электронной почте:
+                        <a href="mailto:help@slidy.ai">help@slidy.ai</a>
+                    </p>
+
+                    <div
+                            class="language-select-wrapper footer-select-wrapper desktop-block"
+                    >
+                        <div class="language-select-header G-align-center">
+                            <div class="l-select-flag G-flex">
+                                <img
+                                        loading="lazy"
+                                        src="assets/images/flag1.svg"
+                                        alt="photo"
+                                        width="28"
+                                        height="20"
+                                />
+                            </div>
+                            <p>Русский</p>
+                            <i class="icon icon-arrow-down"></i>
+                        </div>
+                    </div>
+
+                    <p class="footer-clue desktop-block">
+                        © 2025 Slidy AI. Все права защищены
+                    </p>
+                </div>
+                <div class="footer-logos-column G-flex-column">
+                    <div class="footer-links G-align-center">
+                        <a href="#">
+                            <img
+                                    loading="lazy"
+                                    src="assets/images/telegram.svg"
+                                    alt="photo"
+                                    width="65"
+                                    height="65"
+                            />
+                        </a>
+
+                        <a href="#">
+                            <img
+                                    loading="lazy"
+                                    src="assets/images/vk.svg"
+                                    alt="photo"
+                                    width="65"
+                                    height="65"
+                            />
+                        </a>
+                    </div>
+
+                    <div class="footer-apps G-align-center">
+                        <a href="#">
+                            <img
+                                    loading="lazy"
+                                    src="assets/images/appStore.svg"
+                                    alt="photo"
+                                    width="185"
+                                    height="54"
+                            />
+                        </a>
+
+                        <a href="#">
+                            <img
+                                    loading="lazy"
+                                    src="assets/images/googlePlay.svg"
+                                    alt="photo"
+                                    width="65"
+                                    height="65"
+                            />
+                        </a>
+                    </div>
+                </div>
+                <p class="footer-clue mobile-block">
+                    © 2025 Slidy AI. Все права защищены
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/macy@2"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.event.move/1.3.6/jquery.event.move.min.js" defer></script>
+<script defer src="assets/js/swiper.js"></script>
+<script defer src="assets/js/index.js"></script>
+
+</body>
+</html>

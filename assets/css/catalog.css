@@ -134,39 +134,53 @@
   line-height: 20px;
   color: var(--text-color);
 }
-.checkbox-filters-list {
+.catalog-check-col {
   margin-top: 8px;
   gap: 2px;
+  display: flex;
+  flex-direction: column;
 }
-.checkbox-filters-list li {
-  padding: 6px 12px 6px 6px;
+.checkbox-chek, .checkbox-radio{
+  padding: 6px 12px 6px 32px;
   transition: 0.3s;
   cursor: pointer;
   display: flex;
   align-items: start;
   gap: 7px;
   border-radius: 5px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: relative;
 }
-.checkbox-filters-list li span {
+
+.checkbox-chek small {
   color: var(--text-color6);
   transition: 0.3s;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
 }
-.checkbox-filters-list li:hover {
+.checkbox-chek:hover {
   background: var(--main-container6);
 }
-.checkbox-filters-list li:hover button {
-  border: 1px solid var(--text-color);
+
+
+.checkbox-chek input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  top: 0;
+  left: 0;
 }
-.checkbox-filters-list li:hover span {
-  color: var(--text-color);
-}
-.checkbox-filters-list li button {
-  flex: 0 0 17px;
+
+.checkmark {
+  position: absolute;
+  top: 7.5px;
+  left: 7.5px;
   height: 17px;
-  background: transparent;
+  width: 17px;
   border: 1px solid var(--text-color5);
   transition: 0.3s;
   border-radius: 2px;
@@ -175,19 +189,66 @@
   justify-content: center;
 }
 
-.checkbox-filters-list li button i {
-  background: var(--bg-color);
-  font-size: 14px;
+
+.checkbox-chek:hover .checkmark  {
+  border: 1px solid var(--text-color);
+}
+.checkbox-chek:hover small {
+  color: var(--text-color);
 }
 
-.checkbox-filters-list li.active button {
+.checkbox-chek .checkmark i{
+  background: var(--bg-color);
+  font-size: 14px;
+  display: none;
+}
+.checkbox-chek input:checked ~ .checkmark i {
+  display: block;
+}
+
+.checkbox-chek input:checked ~ .checkmark {
   background: var(--accent-color);
   border: 1px solid transparent;
 }
 
-.checkbox-filters-list li.active span {
+.checkbox-chek input:checked ~ .checkmark small {
   color: var(--text-color);
 }
+
+
+
+
+.radiobtn {
+  position: absolute;
+  height: 17px;
+  width: 17px;
+  border-radius: 50%;
+  top: 7.5px;
+  left: 7.5px;
+  border: 1px solid var(--text-color5);
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2px;
+}
+.checkbox-chek .radiobtn i{
+  background: var(--bg-color);
+  font-size: 14px;
+  display: none;
+}
+
+.checkbox-chek input:checked ~ .radiobtn {
+  background: var(--accent-color);
+  border: 1px solid transparent;
+}
+.checkbox-chek input:checked ~ .radiobtn i{
+  display: block;
+}
+
+
+
+
 .color-filters-list {
   margin-top: 8px;
   display: flex;
@@ -306,10 +367,7 @@
   line-height: 28px;
 }
 .templates-count p {
-  color: var(--text-color6);
   font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
 }
 
 .c-categories-select {
@@ -338,8 +396,6 @@
 }
 .c-select-header p {
   font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
   color: var(--text-color);
   transition: 0.3s;
 }
@@ -562,8 +618,6 @@
 
 .catalog-item-name {
   font-weight: 600;
-  font-size: 16px;
-  line-height: 20px;
   color: var(--text-color);
 }
 .catalog-item-categories {
@@ -852,8 +906,6 @@
 }
 .t-main-info-row p {
   font-weight: 600;
-  font-size: 16px;
-  line-height: 20px;
   color: var(--text-color);
 }
 .t-main-info-row span {
@@ -883,7 +935,10 @@
 @media (max-width: 1400px) {
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1099px) {
+  .catalog-items-wrapper {
+    max-width: 718px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -893,7 +948,7 @@
   .template-modal-wrapper {
     flex-direction: column;
     border-radius: 12px;
-    max-height: 90vh;
+    max-height: 80vh;
   }
   .template-modal-main {
     max-width: 100%;

@@ -155,6 +155,10 @@
       mask-image: url(../../images/icons/mail-outline.svg);
   -webkit-mask-image: url(../../images/icons/mail-outline.svg);
 }
+.icon-copy{
+      mask-image: url(copy.svg);
+  -webkit-mask-image: url(copy.svg);
+}
 
 
 .icon-heart{

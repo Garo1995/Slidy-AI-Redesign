@@ -191,6 +191,7 @@ header.moved {
   color: var(--text-color2);
   border-radius: 6px;
   transition: 0.3s;
+  white-space: nowrap;
 }
 .btn-register i {
   font-size: 15px;

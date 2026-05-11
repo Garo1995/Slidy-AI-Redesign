@@ -1033,7 +1033,7 @@
     <div class="container">
         <div class="reviews-rating-title G-align-center G-justify-between">
             <h3 class="style-h3">Отзывы и рейтинги <span>(1,291)</span></h3>
-            <button class="btn-arrow">Оставить отзыв</button>
+            <button data-val="modal-form" class="open_modal btn-arrow">Оставить отзыв</button>
         </div>
         <div class="reviews-rating G-align-center">
             <strong class="rating-count">4,8</strong>
@@ -1077,7 +1077,7 @@
         </div>
         <div class="reviews-rating-mob">
             <strong class="rating-count">4,8</strong>
-            <button class="btn-arrow">Оставить отзыв</button>
+            <button data-val="modal-form" class="open_modal btn-arrow">Оставить отзыв</button>
         </div>
         <div class="reviews-boxes G-flex-column">
             <div class="reviews-box">
@@ -1671,6 +1671,51 @@
             </div>
         </div>
     </footer>
+
+
+
+
+<div id="modal-form" class="modal" >
+    <div class="modal-content">
+        <div class="modal-form">
+            <div class="close"></div>
+            <h3> <img loading="lazy" src="assets/images/titl-pap.png" alt="photo" width="18" height="18"> Оставьте отзыв на этот шаблон!</h3>
+
+            <form action="">
+              <div class="modal-form-col G-flex-column">
+                  <div class="form-input">
+                      <small>Ваше имя</small>
+                      <label>
+                          <input type="text" placeholder="Иван И.">
+                      </label>
+                  </div>
+                  <div class="form-input">
+                      <small>Текст отзыва</small>
+                      <label>
+                          <textarea placeholder="Напишите свои впечатления об использовании"></textarea>
+                      </label>
+                  </div>
+                  <div class="form-input">
+                      <small>Выберите оценку</small>
+                      <div class="select-rating G-align-center">
+                          <span>4</span>
+                          <ul>
+                              <li><i class="star-rounded"></i></li>
+                              <li><i class="star-rounded"></i></li>
+                              <li><i class="star-rounded"></i></li>
+                              <li><i class="star-rounded"></i></li>
+                              <li><i class="icon star-black"></i></li>
+                          </ul>
+                      </div>
+                  </div>
+                  <button class="btn-start">Отправить</button>
+              </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+
 
 <script defer src="https://cdn.jsdelivr.net/npm/macy@2"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

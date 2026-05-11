@@ -66,8 +66,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-
-
 document.addEventListener("DOMContentLoaded", () => {
   const animatedItems = document.querySelectorAll(
     ".fade-left, .fade-right, .fade-top, .fade-bottom"
@@ -118,9 +116,7 @@ $(function () {
       $this.removeClass("open");
     }
   };
-
   let accordion = new Accordion($("#accordion"), false);
-
 
 });
 
@@ -193,8 +189,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
-
-
 
 document.addEventListener('DOMContentLoaded', () => {
   const languageModalBlock = document.querySelector('.language-modal');
@@ -299,11 +293,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-
-
-
-
-  document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
     const catalog = document.querySelector("[data-catalog]");
     if (!catalog) return;
 
@@ -346,9 +336,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-
-
-  document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
   const tabsWrapper = document.querySelector(".possibilities-tabs");
   const buttons = document.querySelectorAll(".possibilities-tabs button");
   const columns = document.querySelectorAll(".possibilities-column");
@@ -459,8 +447,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-
-
 document.addEventListener("DOMContentLoaded", function () {
   const HEADER_HEIGHT = 100;
 
@@ -549,7 +535,6 @@ document.addEventListener("DOMContentLoaded", function () {
     heroGenerateElement.classList.remove("active");
   });
 });
-
 
 document.addEventListener("DOMContentLoaded", () => {
   const mobileSideNavBlock = document.querySelector(".side-nav-mobile");
@@ -691,7 +676,6 @@ document.addEventListener("DOMContentLoaded", () => {
   mobileSideNavScrollContainer.addEventListener("scroll", updateMobileHorizontalEdgeClasses);
 });
 
-
 document.addEventListener('DOMContentLoaded', function () {
   const templatesTabsWrapper = document.querySelector('.templates-tabs');
   const templatesTabButtons = document.querySelectorAll('.templates-tabs button');
@@ -728,7 +712,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 });
-
 
 document.addEventListener('DOMContentLoaded', function () {
   const customCategorySelect = document.querySelector('.c-categories-select');
@@ -770,8 +753,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 });
-
-
 
 document.addEventListener('DOMContentLoaded', function () {
   const customCheckboxFilterLists = document.querySelectorAll('.checkbox-filters-list');
@@ -828,7 +809,6 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
-
 document.addEventListener('DOMContentLoaded', function () {
   const customCatalogTabs = document.querySelectorAll('.catalog-tabs');
 
@@ -863,7 +843,6 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-
 document.addEventListener('DOMContentLoaded', function () {
   const customTemplateModal = document.querySelector('.template-description-modal');
   const customTemplateModalWrapper = document.querySelector('.template-modal-wrapper');
@@ -894,8 +873,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 });
-
-
 
 document.addEventListener('DOMContentLoaded', function () {
   const customTemplateModalMediaBlocks = document.querySelectorAll('.template-modal-media');
@@ -983,10 +960,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
-
-
-
-
 
 document.addEventListener("DOMContentLoaded", function () {
   const catalog = document.querySelector("[data-catalog]");
@@ -1129,3 +1102,78 @@ document.addEventListener("DOMContentLoaded", function () {
 
   updateCatalogPagination();
 });
+
+
+
+
+
+
+
+
+
+
+$('.collection-more').on('click', function (e) {
+  $('.collect-cnt-wrap').toggleClass('collect-cnt-opened')
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$('.open_modal').on('click', function () {
+  let attr = $(this).attr('data-val');
+  let modal = $('#' + attr);
+  modal.removeClass('out');
+  modal.fadeIn();
+  $('body').addClass('body_fix');
+});
+
+$('.close').on('click', function () {
+
+  $('body').removeClass('body_fix');
+  let prt = $(this).parents('.modal');
+
+  prt.addClass('out')
+  setTimeout(function () {
+    prt.fadeOut();
+  }, 100);
+});
+
+$(window).on('click', function (event) {
+  $('.modal').each(function () {
+    let gtattr = $(this).attr('id');
+    let new_mod = $('#' + gtattr);
+    let md_cnt = $(new_mod).find('.modal-content');
+    if (event.target === $(md_cnt)[0]) {
+      setTimeout(function () {
+        $(new_mod).addClass('out');
+        $(new_mod).fadeOut()
+      }, 100)
+      $('body').removeClass('body_fix');
+    }
+    if (event.target === this) {
+      setTimeout(function () {
+        $(new_mod).addClass('out');
+        $(new_mod).fadeOut()
+      }, 100)
+    }
+  })
+});
+
+
