@@ -888,20 +888,20 @@
     align-items: center;
     gap: 10px;
 }
+
 .linking-card-names ul li{
     backdrop-filter: blur(20px);
-    border: 1px solid #FFFFFF1A;
-    background: #00000066;
+    border: 1px solid var(--border);
+    background: var(--slider-thumb);
     width: max-content;
     padding: 10px 16px 10px 12px;
     gap: 8px;
     border-radius: 100px;
     font-weight: 500;
-    color: #FFFFFF;
+    color: var(--text-color);
     display: flex;
     align-items: center;
 }
-
 
 .linking-card .section-big-title{
     color: #FFFFFF;

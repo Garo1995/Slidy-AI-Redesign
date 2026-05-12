@@ -809,27 +809,77 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
+
+
+
+
+
+
+
+
+
 document.addEventListener('DOMContentLoaded', function () {
-  const customCatalogTabs = document.querySelectorAll('.catalog-tabs');
+  const catalogTabs = document.querySelectorAll('.catalog-tabs');
 
-  if (!customCatalogTabs.length) return;
+  if (!catalogTabs.length) return;
 
-  customCatalogTabs.forEach(function (customCatalogTab) {
-    const customCatalogButtons = customCatalogTab.querySelectorAll('button');
+  catalogTabs.forEach(function (catalogTab) {
 
-    if (!customCatalogButtons.length) return;
+    const buttons = catalogTab.querySelectorAll('button');
 
-    customCatalogButtons.forEach(function (customCatalogButton) {
-      customCatalogButton.addEventListener('click', function () {
-        customCatalogButtons.forEach(function (button) {
-          button.classList.remove('active');
-        });
+    if (!buttons.length) return;
 
-        customCatalogButton.classList.add('active');
+    const allButton = buttons[0];
+    const categoryButtons = [...buttons].slice(1);
+
+    buttons.forEach(function (button) {
+
+      button.addEventListener('click', function () {
+
+        // Кнопка "Все шаблоны"
+        if (button === allButton) {
+
+          buttons.forEach(btn => {
+            btn.classList.remove('active');
+          });
+
+          allButton.classList.add('active');
+
+          return;
+        }
+
+        // Если нажали категорию
+        allButton.classList.remove('active');
+
+        button.classList.toggle('active');
+
+        // Проверяем есть ли активные категории
+        const hasActiveCategory = categoryButtons.some(btn =>
+            btn.classList.contains('active')
+        );
+
+        // Если ничего не выбрано — включаем "Все шаблоны"
+        if (!hasActiveCategory) {
+          allButton.classList.add('active');
+        }
+
       });
+
     });
+
   });
 });
+
+
+
+
+
+
+
+
+
+
+
 
 document.addEventListener('DOMContentLoaded', function () {
   const customSelectedCategoryButtons = document.querySelectorAll('.c-selected-categories button');
@@ -1113,7 +1163,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 $('.collection-more').on('click', function (e) {
-  $('.collect-cnt-wrap').toggleClass('collect-cnt-opened')
+  $(this).addClass('collection-more-none')
+  $('.collect-cnt-wrap').addClass('collect-cnt-opened')
+})
+
+
+
+$('.more-prompts').on('click', function (e) {
+  $(this).addClass('more-prompts-none')
+  $('.prompts-catalog-wrap').addClass('prompts-catalog-opened')
 })
 
 
@@ -1128,7 +1186,18 @@ $('.collection-more').on('click', function (e) {
 
 
 
+document.querySelectorAll('.for-copy').forEach(button => {
+  button.addEventListener('click', function (e) {
+    e.preventDefault();
+    e.stopPropagation();
 
+    const card = this.closest('.prompts-catalog-box');
+
+    const text = card.querySelector('.prompt-name-text p').innerText;
+
+    navigator.clipboard.writeText(text);
+  });
+});
 
 
 

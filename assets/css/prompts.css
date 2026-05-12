@@ -94,6 +94,9 @@
 .collect-cnt-opened .collections-none{
     display: block;
 }
+.collection-more-none{
+    display: none;
+}
 
 
 .collection-more{
@@ -141,7 +144,9 @@
     background: var(--slider-thumb);
     cursor: pointer;
 }
-
+.more-prompts-none{
+    display: none;
+}
 .prompts-cat-btn {
     padding: 7px 14px;
     font-family: "Inter";
@@ -156,18 +161,31 @@
     white-space: nowrap;
 }
 
-
+.prompts-catalog-none{
+    display: none;
+}
+.prompts-catalog-opened .prompts-catalog-none{
+    display: flex;
+}
 .for-copy{
     border: 1px solid var(--border);
     height: 32px;
     width: 32px;
     min-width: 32px;
     border-radius: 6px;
+    transition: 0.3s;
     background: var(--slider-thumb);
+}
+.for-copy:hover{
+    border: 1px solid var(--accent-color);
 }
 .for-copy .icon-copy{
     font-size: 20px;
 }
+.for-copy:hover .icon-copy{
+    background-color: var(--accent-color);
+}
+
 .prompt-name-title h4{
     font-weight: 600;
     font-size: 16px;
@@ -200,7 +218,11 @@
 .prompts-catalog-box .icon-wheel {
     width: 12px;
 }
-
+.prompts-catalog-box .read-more{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .prompts-section h1{
     margin-top: 28px;
 }
@@ -272,6 +294,9 @@
 
 
 .prompt-name-add{
+    position: relative;
+}
+.prompt-name-add .template-modal-wrapper{
     border: 1px solid var(--slide-border);
 }
 .prompt-name-add h3{
@@ -285,6 +310,7 @@
 .prompt-text-boxes{
     margin-top: 20px;
     gap: 32px;
+    padding-bottom: 120px;
 }
 .prompt-text-cnt{
     width: 100%;
@@ -353,10 +379,21 @@
     padding: 16px;
     gap: 16px;
     margin-top: 20px;
+    background: var(--slider-thumb);
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 2;
+
 }
 .prompt-text-btn .read-more {
     font-size: 18px;
-    line-height: 22px;
+    line-height: 20px;
+}
+.prompt-text-btn .btn-start{
+    gap: 6px;
 }
 
 
@@ -499,8 +536,8 @@
         padding: 16px;
     }
     .prompt-text-btn {
-        padding: 16px;
-        gap: 10px;
+        padding: 12px 20px 20px;
+        gap: 8px;
         margin-top: 14px;
         flex-direction: column;
     }
@@ -509,5 +546,20 @@
     }
     .prompt-text-btn .btn-start {
         width: 100%;
+    }
+    .prompt-text-boxes {
+        padding-bottom: 154px;
+    }
+    .linking-card-row ul{
+        flex-direction: column-reverse;
+    }
+    .linking-card-row ul li {
+        padding: 10px 15px 10px 12px;
+        gap: 6px;
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .prompt-text-boxes {
+        margin-top: 16px;
     }
 }
