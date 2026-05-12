@@ -5,7 +5,9 @@
     z-index: 2;
     background: var(--main-container7);
 }
-
+.prompts-section .hero-bg img {
+    object-fit: unset;
+}
 .presentations-flex{
     margin-top: 48px;
     gap: 20px;
@@ -413,6 +415,9 @@
     }
     .prompts-section{
         min-height: 732px;
+    }
+    .prompts-section .hero-bg img {
+        object-fit: cover;
     }
 }
 

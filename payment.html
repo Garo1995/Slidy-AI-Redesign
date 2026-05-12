@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8"/>
+
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Slidy-AI-Redesign</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+          rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="header-body G-align-center">
+            <div class="header-tools G-align-center">
+                <a href="index.html" class="header-logo G-flex">
+                    <img
+                            loading="eager"
+                            src="assets/images/logo.svg"
+                            data-light="assets/images/logo.svg"
+                            data-dark="assets/images/logo-dark.svg"
+                            alt="logo"
+                            fetchpriority="high"
+                            width="96"
+                            height="29"
+                            style="width: auto; height: auto"
+                    />
+                </a>
+
+            </div>
+
+            <div class="header-actions G-align-center">
+                <div class="language-select-wrapper header-select-wrapper">
+                    <div class="language-select-header G-align-center">
+                        <div class="l-select-flag G-flex">
+                            <img
+                                    loading="lazy"
+                                    src="assets/images/flag1.svg"
+                                    alt="photo"
+                                    width="28"
+                                    height="20"
+                            />
+                        </div>
+                        <p>Русский</p>
+                        <i class="icon icon-arrow-down"></i>
+                    </div>
+                </div>
+
+                <a href="#" class="btn-login">
+                    <span class="desktop-block">Вход</span>
+                    <i class="icon icon-login mobile-block"></i>
+                </a>
+                <a href="#" class="btn-register">
+                    <span class="desktop-block">Попробовать бесплатно</span>
+                    <i class="icon icon-arrow mobile-block"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="prompts-section">
+    <div class="container">
+        <div class="hero-body">
+            <div class="hero-body">
+                <div class="hero-titles fade-top G-column-center">
+                    <div class="bread-crumbs fade-top show">
+                        <ul>
+                            <li>
+                                <a href="index.html">Главная</a>
+                            </li>
+                            <li>
+                                <span>/</span>
+                            </li>
+                            <li>
+                                <a href="#">Ресурсы</a>
+                            </li>
+                            <li>
+                                <span>/</span>
+                            </li>
+                            <li>
+                                <a class="active" href="#">Промпты</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <h1>
+                        Библиотека <span class="text-blue">промптов </span> <br> для презентаций
+                    </h1>
+                    <p>
+                        Библиотека <strong>готовых запросов</strong> для Slidy. Экономия времени, <br> предсказуемый результат, минимум правок.
+                    </p>
+                </div>
+                <div class="hero-generate fade-bottom G-align-center">
+                    <label>
+                        <input name="generate" placeholder="Поиск по промптам и категориям..." type="text"/>
+                    </label>
+                    <button class="btn-register G-align-center">
+                        <span>Найти промпт</span>
+                    </button>
+                </div>
+                <div class="presentations-flex G-center fade-bottom">
+                    <p><img loading="lazy" src="assets/images/brain.png" alt="photo" width="18" height="18"> 120+ промптов в библиотеке</p>
+                    <span>|</span>
+                    <p><img loading="lazy" src="assets/images/raket.png" alt="photo" width="18" height="18"> 9 категорий</p>
+                    <span>|</span>
+                    <p><img loading="lazy" src="assets/images/star.svg" alt="photo" width="18" height="18"> 15 подборок</p>
+                    <span>|</span>
+                    <p><img loading="lazy" src="assets/images/compareIcon1.png" alt="photo" width="18" height="18"> 30+ обновлений в месяц</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero-bg G-flex">
+        <img
+                loading="eager"
+                src="assets/images/prompts.png"
+                data-light="assets/images/prompts-ligth.png"
+                data-dark="assets/images/prompts.png"
+                alt="photo"
+                class="img-desktop"
+                width="1920"
+                height="500"
+        />
+
+        <img
+                loading="eager"
+                src="assets/images/prompts-mob.png"
+                data-light="assets/images/prompts-mob-ligth.png"
+                data-dark="assets/images/prompts-mob.png"
+                alt="photo"
+                class="img-mobile"
+                width="1040"
+                height="500"
+        />
+    </div>
+
+
+</section>
+
+
+
+
+<footer class="footer">
+    <div class="loss-quality-elips G-flex">
+        <img loading="lazy" src="./assets/images/elip-dark.png" alt="photo">
+    </div>
+    <div class="container">
+        <div class="footer-body fade-bottom">
+            <div class="footer-bottom G-align-start">
+                <div class="footer-logo-wrapper G-align-center">
+                    <a href="index.html" class="footer-logo G-flex">
+                        <img
+                                loading="lazy"
+                                src="assets/images/footerlogo.svg"
+                                data-light="assets/images/footerlogo.svg"
+                                data-dark="assets/images/logo-dark.svg"
+                                alt="logo"
+                                width="105"
+                                height="29"
+                        />
+                    </a>
+
+                    <div
+                            class="language-select-wrapper footer-select-wrapper mobile-block"
+                    >
+                        <div class="language-select-header G-align-center">
+                            <div class="l-select-flag G-flex">
+                                <img
+                                        loading="lazy"
+                                        src="assets/images/flag1.svg"
+                                        alt="photo"
+                                        width="28"
+                                        height="20"
+                                />
+                            </div>
+                            <p>Русский</p>
+                            <i class="icon icon-arrow-down"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <nav class="footer-nav G-align-start">
+                    <ul>
+                        <p>ПРОДУКТ</p>
+                        <li>
+                            <a href="#">Цены</a>
+                        </li>
+                        <li>
+                            <a href="#">Блог</a>
+                        </li>
+                        <li>
+                            <a href="#">Промты</a>
+                        </li>
+                        <li>
+                            <a href="catalog.html">Каталог презентаций</a>
+                        </li>
+                        <li>
+                            <a href="#">Шаблоны</a>
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <p>КОМПАНИЯ</p>
+                        <li>
+                            <a href="about.html">О нас</a>
+                        </li>
+                        <li>
+                            <a href="#">Команда</a>
+                        </li>
+                        <li>
+                            <a href="#">Помощь</a>
+                        </li>
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <p>РЕШЕНИЯ</p>
+                        <li>
+                            <a href="#">Стартапам</a>
+                        </li>
+                        <li>
+                            <a href="#">Маркетологам</a>
+                        </li>
+                        <li>
+                            <a href="#">Отделам продаж</a>
+                        </li>
+                        <li>
+                            <a href="#">Студентам</a>
+                        </li>
+                        <li>
+                            <a href="#">Преподавателям</a>
+                        </li>
+                        <li>
+                            <a href="#">Консультантам</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <p>ПРАВОВАЯ ИНФОРМАЦИЯ</p>
+                        <li>
+                            <a href="#">Юридическая информация</a>
+                        </li>
+                        <li>
+                            <a href="#">Правила использования</a>
+                        </li>
+                        <li>
+                            <a href="#">Политика cookie</a>
+                        </li>
+                        <li>
+                            <a href="#">Соглашение об обработке данных</a>
+                        </li>
+                        <li>
+                            <a href="#">Политика конфиденциальности</a>
+                        </li>
+                        <li>
+                            <a href="#">Условия использования</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-top G-flex">
+                <div class="footer-column G-flex-column">
+                    <p class="footer-text">
+                        По всем вопросам, связанным с работой сервиса, вы можете
+                        связаться с нами по электронной почте:
+                        <a href="mailto:help@slidy.ai">help@slidy.ai</a>
+                    </p>
+
+                    <div
+                            class="language-select-wrapper footer-select-wrapper desktop-block"
+                    >
+                        <div class="language-select-header G-align-center">
+                            <div class="l-select-flag G-flex">
+                                <img
+                                        loading="lazy"
+                                        src="assets/images/flag1.svg"
+                                        alt="photo"
+                                        width="28"
+                                        height="20"
+                                />
+                            </div>
+                            <p>Русский</p>
+                            <i class="icon icon-arrow-down"></i>
+                        </div>
+                    </div>
+
+                    <p class="footer-clue desktop-block">
+                        © 2025 Slidy AI. Все права защищены
+                    </p>
+                </div>
+                <div class="footer-logos-column G-flex-column">
+                    <div class="footer-links G-align-center">
+                        <a href="#">
+                            <img
+                                    loading="lazy"
+                                    src="assets/images/telegram.svg"
+                                    alt="photo"
+                                    width="65"
+                                    height="65"
+                            />
+                        </a>
+
+                        <a href="#">
+                            <img
+                                    loading="lazy"
+                                    src="assets/images/vk.svg"
+                                    alt="photo"
+                                    width="65"
+                                    height="65"
+                            />
+                        </a>
+                    </div>
+
+                    <div class="footer-apps G-align-center">
+                        <a href="#">
+                            <img
+                                    loading="lazy"
+                                    src="assets/images/appStore.svg"
+                                    alt="photo"
+                                    width="185"
+                                    height="54"
+                            />
+                        </a>
+
+                        <a href="#">
+                            <img
+                                    loading="lazy"
+                                    src="assets/images/googlePlay.svg"
+                                    alt="photo"
+                                    width="65"
+                                    height="65"
+                            />
+                        </a>
+                    </div>
+                </div>
+                <p class="footer-clue mobile-block">
+                    © 2025 Slidy AI. Все права защищены
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/macy@2"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.event.move/1.3.6/jquery.event.move.min.js" defer></script>
+<script defer src="assets/js/swiper.js"></script>
+<script defer src="assets/js/index.js"></script>
+
+</body>
+</html>
