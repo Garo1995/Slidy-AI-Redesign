@@ -357,3 +357,146 @@ const collectionSwiper = new Swiper(".collection-slider", {
     },
   },
 });
+
+
+const businessesSwiper = new Swiper(".businesses-slider", {
+  spaceBetween: 9,
+  slidesPerView:3,
+  pagination: {
+    el: ".businesses-pagination",
+    clickable: true,
+  },
+
+  breakpoints: {
+    '1020': {
+      spaceBetween: 9,
+      slidesPerView:3,
+      enabled: false,
+
+    },
+    '767': {
+      spaceBetween: 10,
+      slidesPerView:2,
+      enabled: true,
+
+
+    },
+    '640': {
+      slidesPerGroup: 1,
+      slidesPerView: 2,
+      spaceBetween: 10,
+      enabled: true,
+
+    },
+    '320': {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      spaceBetween: 10,
+      enabled: true,
+
+    },
+  },
+});
+
+
+
+
+const securitySwiper = new Swiper(".security-slider", {
+  spaceBetween: 9,
+  slidesPerView:2,
+  pagination: {
+    el: ".security-pagination",
+    clickable: true,
+  },
+
+  breakpoints: {
+    '1020': {
+      spaceBetween: 9,
+      slidesPerView:2,
+    },
+    '767': {
+      spaceBetween: 10,
+      slidesPerView:2,
+    },
+    '640': {
+      slidesPerGroup: 1,
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    '320': {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      spaceBetween: 10,
+    },
+  },
+});
+
+
+
+const accessSwiper = new Swiper(".access-control-slider", {
+  spaceBetween: 10,
+  slidesPerView:3,
+  pagination: {
+    el: ".access-pagination",
+    clickable: true,
+  },
+
+  breakpoints: {
+    '1020': {
+      spaceBetween: 10,
+      slidesPerView:3,
+    },
+    '767': {
+      spaceBetween: 10,
+      slidesPerView:2,
+    },
+    '640': {
+      slidesPerGroup: 1,
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    '320': {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      spaceBetween: 10,
+    },
+  },
+});
+
+const legalSwiper = new Swiper(".legal-documents-slid", {
+  spaceBetween: 10,
+  slidesPerView:3,
+  pagination: {
+    el: ".legal-pagination",
+    clickable: true,
+  },
+
+  breakpoints: {
+    '1020': {
+      spaceBetween: 10,
+      slidesPerView:3,
+      enabled: false,
+
+    },
+    '767': {
+      spaceBetween: 10,
+      slidesPerView:2,
+      enabled: true,
+
+    },
+    '640': {
+      slidesPerGroup: 1,
+      slidesPerView: 2,
+      spaceBetween: 10,
+      enabled: true,
+
+    },
+    '320': {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      spaceBetween: 10,
+      enabled: true,
+
+    },
+  },
+});
