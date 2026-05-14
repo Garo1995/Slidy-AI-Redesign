@@ -1246,3 +1246,90 @@ $(window).on('click', function (event) {
 });
 
 
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+
+  const menuLinks = document.querySelectorAll('.methods-menu a');
+
+  // Плавный скролл при клике
+  menuLinks.forEach(link => {
+
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      const targetId = this.getAttribute('href');
+      const targetBlock = document.querySelector(targetId);
+
+      if (targetBlock) {
+
+        const offset = 120;
+
+        const targetPosition =
+            targetBlock.getBoundingClientRect().top +
+            window.pageYOffset -
+            offset;
+
+        window.scrollTo({
+          top: targetPosition,
+          behavior: 'smooth'
+        });
+      }
+    });
+
+  });
+
+  // Активный пункт при скролле
+  const sections = [];
+
+  menuLinks.forEach(link => {
+
+    const id = link.getAttribute('href');
+    const section = document.querySelector(id);
+
+    if (section) {
+      sections.push({
+        link,
+        section
+      });
+    }
+
+  });
+
+  function setActiveMenu() {
+
+    let currentSection = null;
+
+    sections.forEach(item => {
+
+      const rect = item.section.getBoundingClientRect();
+
+      // Когда блок дошёл до экрана
+      if (rect.top <= 350) {
+        currentSection = item;
+      }
+
+    });
+
+    if (currentSection) {
+
+      menuLinks.forEach(link => {
+        link.classList.remove('active');
+      });
+
+      currentSection.link.classList.add('active');
+
+    }
+
+  }
+
+  // Первый активный сразу
+  setActiveMenu();
+
+  window.addEventListener('scroll', setActiveMenu);
+
+});
